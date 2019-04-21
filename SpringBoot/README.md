@@ -1,2 +1,2 @@
 # MSTutorial
-Micro service using springboot that includes iOS or Android client.
+Server-side using spring boot what its version is `2.1.4`.
