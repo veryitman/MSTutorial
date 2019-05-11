@@ -24,7 +24,7 @@ public class MSSigninController {
         MSResponse response = new MSResponse();
         MSUser user = null;
 
-        if (null == userName || null == userPwd || userName.length() <= 1 || userPwd.length() <= 1) {
+        if (null == userName || null == userPwd || userName.length() <= 0 || userPwd.length() <= 0) {
             MSResponseEnum responseEnum = MSResponseEnum.Login4SiginInvalidInfo;
             response.setCode(responseEnum.getCode());
             response.setMsg(responseEnum.getMsg());
