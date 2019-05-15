@@ -2,14 +2,20 @@ package com.veryitman.springboot.model;
 
 public enum MSResponseEnum {
 
-    /** Global code. */
+    /**
+     * Global code.
+     */
     SUCCESS(0, "Success."),
     UNKNOWN_ERROR(-1, "Unknown error."),
 
-    /** Login error. */
+    /**
+     * Login error.
+     */
     Login4SiginInvalidInfo(100001, "User's name or password is invalid."),
 
-    /** Signup error. */
+    /**
+     * Signup error.
+     */
     SignupInvalidInfo(100005, "User's name or password is invalid");
 
     private int code;
