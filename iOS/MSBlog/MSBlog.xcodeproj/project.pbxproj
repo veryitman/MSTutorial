@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A92D14946494F95613B0704 /* Pods_MSBlog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068C8E081A8F8F7253BEF836 /* Pods_MSBlog.framework */; };
 		4DB17A25226DEC5700BDB88B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DB17A24226DEC5700BDB88B /* Assets.xcassets */; };
 		4DB17A28226DEC5700BDB88B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DB17A26226DEC5700BDB88B /* LaunchScreen.storyboard */; };
 		4DB17A33226DED0D00BDB88B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB17A31226DED0D00BDB88B /* AppDelegate.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		068C8E081A8F8F7253BEF836 /* Pods_MSBlog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MSBlog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DB17A1A226DEC5600BDB88B /* MSBlog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSBlog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DB17A24226DEC5700BDB88B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DB17A27226DEC5700BDB88B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -28,6 +30,8 @@
 		4DB17A3A226DEEF100BDB88B /* FriendController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendController.swift; sourceTree = "<group>"; };
 		4DB17A3C226DEEFF00BDB88B /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		4DB17A3E226DF64100BDB88B /* RootTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
+		676836412B5AEA8612320F6A /* Pods-MSBlog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSBlog.debug.xcconfig"; path = "Target Support Files/Pods-MSBlog/Pods-MSBlog.debug.xcconfig"; sourceTree = "<group>"; };
+		FCA02DBBD79765B319720B8F /* Pods-MSBlog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSBlog.release.xcconfig"; path = "Target Support Files/Pods-MSBlog/Pods-MSBlog.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A92D14946494F95613B0704 /* Pods_MSBlog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +51,8 @@
 			children = (
 				4DB17A1C226DEC5600BDB88B /* MSBlog */,
 				4DB17A1B226DEC5600BDB88B /* Products */,
+				7D7219E4B94301E0B9A14592 /* Pods */,
+				4FEC17AD67EDF912488074E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +104,24 @@
 			path = TabController;
 			sourceTree = "<group>";
 		};
+		4FEC17AD67EDF912488074E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				068C8E081A8F8F7253BEF836 /* Pods_MSBlog.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D7219E4B94301E0B9A14592 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				676836412B5AEA8612320F6A /* Pods-MSBlog.debug.xcconfig */,
+				FCA02DBBD79765B319720B8F /* Pods-MSBlog.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -104,9 +129,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4DB17A2C226DEC5700BDB88B /* Build configuration list for PBXNativeTarget "MSBlog" */;
 			buildPhases = (
+				4747057546399DE80DECF7AA /* [CP] Check Pods Manifest.lock */,
 				4DB17A16226DEC5600BDB88B /* Sources */,
 				4DB17A17226DEC5600BDB88B /* Frameworks */,
 				4DB17A18226DEC5600BDB88B /* Resources */,
+				0CA44B74A1C1E4DE21C6C0A1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -162,6 +189,59 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CA44B74A1C1E4DE21C6C0A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MSBlog/Pods-MSBlog-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MSBlog/Pods-MSBlog-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4747057546399DE80DECF7AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MSBlog-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4DB17A16226DEC5600BDB88B /* Sources */ = {
@@ -309,6 +389,7 @@
 		};
 		4DB17A2D226DEC5700BDB88B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 676836412B5AEA8612320F6A /* Pods-MSBlog.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -330,6 +411,7 @@
 		};
 		4DB17A2E226DEC5700BDB88B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCA02DBBD79765B319720B8F /* Pods-MSBlog.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
