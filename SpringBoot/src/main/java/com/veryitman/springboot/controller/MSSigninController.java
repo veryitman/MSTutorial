@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class MSSigninController {
 
     /**
-     * User sigin with user's name and password.
+     * User sigin with user's name and password.+
      */
     @RequestMapping(value = "/name", method = RequestMethod.GET)
     public MSResponse sigin(@RequestParam(value = "username") String userName, @RequestParam(value = "userpwd") String userPwd) {
