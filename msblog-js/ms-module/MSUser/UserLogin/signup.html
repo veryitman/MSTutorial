@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)https://captainbed.vip/register/ -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>注册</title>
+
+    <meta
+            name="viewport"
+            content="width=device-width,initial-scale=1,user-scalable=0"
+    />
+    <link
+            media="all"
+            type="text/css"
+            rel="stylesheet"
+            href="../../../ms-style/register_css_file/social.css"
+    />
+    <script src="../../../ms-style/register_css_file/jquery.js.download"></script>
+    <style type="text/css">
+        body {
+            background: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+<div class="xh-regbox">
+    <div class="xh-title" id="form-title">注册</div>
+    <form class="xh-form">
+        <div class="register fields-error"></div>
+        <div class="xh-form-group">
+            <label class="required">用户名</label>
+            <input
+                    type="text"
+                    id="register_register_user_login"
+                    name="register_user_login"
+                    value=""
+                    placeholder=""
+                    class="form-control "
+                    style=""
+            />
+        </div>
+        <script type="text/javascript">
+            (function ($) {
+                $(document).bind("on_form_register_submit", function (e, m) {
+                    m.register_user_login = $("#register_register_user_login").val();
+                });
+            })(jQuery);
+        </script>
+
+        <script type="text/javascript">
+            (function ($) {
+                $(document).bind("on_form_register_submit", function (e, m) {
+                    m.register_user_email = $("#register_register_user_email").val();
+                });
+            })(jQuery);
+        </script>
+
+        <script type="text/javascript">
+            (function ($) {
+                $(document).bind("on_form_register_submit", function (e, m) {
+                    m.register_email_vcode = $(
+                        "#register_register_email_vcode"
+                    ).val();
+                });
+            })(jQuery);
+        </script>
+        <div class="xh-form-group">
+            <label class="required">密码</label>
+            <input
+                    type="password"
+                    id="register_register_password"
+                    name="register_password"
+                    value=""
+                    placeholder=""
+                    class="form-control "
+                    style=""
+            />
+        </div>
+        <script type="text/javascript">
+            (function ($) {
+                $(document).bind("on_form_register_submit", function (e, m) {
+                    m.register_password = $("#register_register_password").val();
+                });
+            })(jQuery);
+        </script>
+        <div class="xh-form-group">
+            <label class="required">确认密码</label>
+            <input
+                    type="password"
+                    id="register_register_repassword"
+                    name="register_repassword"
+                    value=""
+                    placeholder=""
+                    class="form-control "
+                    style=""
+            />
+        </div>
+        <script type="text/javascript">
+            (function ($) {
+                $(document).bind("on_form_register_submit", function (e, m) {
+                    m.register_repassword = $("#register_register_repassword").val();
+                });
+            })(jQuery);
+        </script>
+        <div class="xh-form-group mt10">
+            <button
+                    type="button"
+                    id="btn-register"
+                    onclick="window.xh_social_view.register();"
+                    class="xh-btn xh-btn-primary xh-btn-block xh-btn-lg"
+            >
+                注册
+            </button>
+        </div>
+        <div class="xh-form-group xh-mT20"></div>
+    </form>
+</div>
+<script type="text/javascript">
+    (function ($) {
+        if (!window.xh_social_view) {
+            window.xh_social_view = {};
+        }
+
+        window.xh_social_view.reset = function () {
+            $(".xh-alert")
+                .empty()
+                .css("display", "none");
+        };
+
+        window.xh_social_view.error = function (msg, parent) {
+            var s = parent ? parent + ".fields-error" : ".fields-error";
+            $(s)
+                .html(
+                    '<div class="xh-alert xh-alert-danger" role="alert">' +
+                    msg +
+                    "</div>"
+                )
+                .css("display", "block");
+        };
+
+        window.xh_social_view.warning = function (msg, parent) {
+            var s = parent ? parent + ".fields-error" : ".fields-error";
+            $(s)
+                .html(
+                    '<div class="xh-alert xh-alert-warning" role="alert">' +
+                    msg +
+                    "</div>"
+                )
+                .css("display", "block");
+        };
+
+        window.xh_social_view.success = function (msg, parent) {
+            var s = parent ? parent + ".fields-error" : ".fields-error";
+            $(s)
+                .html(
+                    '<div class="xh-alert xh-alert-success" role="alert">' +
+                    msg +
+                    "</div>"
+                )
+                .css("display", "block");
+        };
+    })(jQuery);</script
+>
+<script type="text/javascript">
+    (function ($) {
+        $(document).keypress(function (e) {
+            if (e.which == 13) {
+                window.xh_social_view.register();
+            }
+        });
+
+        window.xh_social_view.register = function () {
+            window.xh_social_view.reset();
+
+            var data = {};
+            $(document).trigger("on_form_register_submit", data);
+
+            var validate = {
+                data: data,
+                success: true,
+                message: null
+            };
+
+            $(document).trigger("wsocial_pre_register", validate);
+            if (!validate.success) {
+                window.xh_social_view.warning(validate.message, ".register");
+                return false;
+            }
+
+            var callback = {
+                type: "register",
+                done: false,
+                data: data
+            };
+            $(document).trigger("wsocial_action_before", callback);
+            if (callback.done) {
+                return;
+            }
+
+            if (window.xh_social_view.loading) {
+                return;
+            }
+            window.xh_social_view.loading = true;
+
+            $("#btn-register")
+                .attr("disabled", "disabled")
+                .text("加载中...");
+
+            jQuery.ajax({
+                url:
+                    "https://captainbed.vip/wp-admin/admin-ajax.php?action=xh_social_add_ons_login&tab=register&xh_social_add_ons_login=d7c49f9314&notice_str=0176561500&hash=0ac23d29c11d7fd180bc93bb6bbc7f67",
+                type: "post",
+                timeout: 60 * 1000,
+                async: true,
+                cache: false,
+                data: data,
+                dataType: "json",
+                complete: function () {
+                    window.xh_social_view.loading = false;
+                    $("#btn-register")
+                        .removeAttr("disabled")
+                        .text("注册");
+                },
+                success: function (m) {
+                    var callback = {
+                        type: "register",
+                        done: false,
+                        retry: window.xh_social_view.register,
+                        data: m
+                    };
+                    $(document).trigger("wsocial_action_after", callback);
+                    if (callback.done) {
+                        return;
+                    }
+
+                    if (m.errcode == 0) {
+                        window.xh_social_view.success("注册成功！", ".register");
+                        // location.href='https://captainbed.vip/';
+                        location.href =
+                            "https://captainbed.vip/wp-json/my/after_register/";
+                        return;
+                    }
+
+                    if (m.errcode == 1001) {
+                        window.xh_social_view.warning(m.errmsg, ".register");
+                        location.href = "https://captainbed.vip/wp-admin/";
+                        return;
+                    }
+
+                    window.xh_social_view.error(m.errmsg);
+                },
+                error: function (e) {
+                    window.xh_social_view.error("系统内部错误！", ".register");
+                    console.error(e.responseText);
+                }
+            });
+        };
+    })(jQuery);
+</script>
+</body>
+</html>

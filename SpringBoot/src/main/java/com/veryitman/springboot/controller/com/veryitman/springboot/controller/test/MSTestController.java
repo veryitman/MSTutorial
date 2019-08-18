@@ -33,7 +33,7 @@ public class MSTestController {
 
     // RequestParam
     @RequestMapping(value = "/friends3", method = RequestMethod.GET)
-    public String getFrieds3(@RequestParam(value = "page") String page, @RequestParam(value = "pageSize") String pageSize) {
+    public String getFrieds3(@RequestParam(value = "page") String page, @RequestParam(value = "yy") String pageSize) {
         return "Get friend list. " + "page: " + page + " - pageSize: " + pageSize;
     }
 
