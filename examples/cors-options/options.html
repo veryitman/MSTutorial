@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<!--https://jquery.com/download/-->
+<!--https://github.com/Krinkle/jquery-json/releases-->
+
+<!--https://www.cnblogs.com/wanghuijie/p/preflighted_request.html-->
+<!--https://www.jianshu.com/p/85db845d3929-->
+<!--https://blog.csdn.net/qq_24084925/article/details/55049300-->
+
+<head>
+    <meta charset="utf-8">
+    <title>options-demo</title>
+    <script type="text/javascript" src="./jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./jquery.json.js"></script>
+    <script>
+        function postReq() {
+            var url = "http://localhost:8080/signin/name?username=jack&userpwd=123";
+
+            var data = {
+                "userId": 123,
+                "userName": "wangdachui"
+            };
+            $.ajax({
+                url: url,
+                type: 'POST',
+                dataType: 'json',
+                data: $.toJSON(data),
+                contentType: 'application/json'
+            }).done(function (result) {
+                console.log("success");
+                console.log(result);
+            }).fail(function () {
+                console.log("error");
+            })
+        }
+
+        function getReq() {
+            var url = "http://localhost:8080/signin/name?username=jack&userpwd=123";
+
+            $.ajax({
+                url: url,
+                type: 'GET',
+                dataType: 'json',
+                contentType: 'application/json',
+                headers: {
+                    token: "yu7rX98xxxx_iii^ddd",
+                    userId: 123,
+                    openid: 231232
+                }
+            }).done(function (result) {
+                console.log("success");
+                console.log(result);
+            }).fail(function () {
+                console.log("error");
+            })
+        }
+    </script>
+</head>
+
+<body>
+
+    <button onclick="getReq()">HTTPGET</button>
+    <p/>
+    <button onclick="postReq()">HTTPPOST</button>
+
+</body>
+
+</html>
