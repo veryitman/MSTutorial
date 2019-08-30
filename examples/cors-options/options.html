@@ -14,27 +14,6 @@
     <script type="text/javascript" src="./jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="./jquery.json.js"></script>
     <script>
-        function postReq() {
-            var url = "http://localhost:8080/signin/name?username=jack&userpwd=123";
-
-            var data = {
-                "userId": 123,
-                "userName": "wangdachui"
-            };
-            $.ajax({
-                url: url,
-                type: 'POST',
-                dataType: 'json',
-                data: $.toJSON(data),
-                contentType: 'application/json'
-            }).done(function (result) {
-                console.log("success");
-                console.log(result);
-            }).fail(function () {
-                console.log("error");
-            })
-        }
-
         function getReq() {
             var url = "http://localhost:8080/signin/name?username=jack&userpwd=123";
 
@@ -55,14 +34,35 @@
                 console.log("error");
             })
         }
+
+        function postReq() {
+            var url = "http://localhost:8080/signup/name";
+
+            var data = {
+                "userId": 123,
+                "userName": "wangdachui"
+            };
+            $.ajax({
+                url: url,
+                type: 'POST',
+                dataType: 'json',
+                data: $.toJSON(data),
+                contentType: 'application/json'
+            }).done(function (result) {
+                console.log("success");
+                console.log(result);
+            }).fail(function () {
+                console.log("error");
+            })
+        }
     </script>
 </head>
 
 <body>
 
-    <button onclick="getReq()">HTTPGET</button>
+    <button onclick="getReq()">用户名登录-GET</button>
     <p/>
-    <button onclick="postReq()">HTTPPOST</button>
+    <button onclick="postReq()">用户名注册-POST</button>
 
 </body>
 
