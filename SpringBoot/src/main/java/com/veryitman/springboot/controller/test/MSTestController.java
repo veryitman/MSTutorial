@@ -1,4 +1,4 @@
-package com.veryitman.springboot.controller.com.veryitman.springboot.controller.test;
+package com.veryitman.springboot.controller.test;
 
 import org.springframework.web.bind.annotation.*;
 
