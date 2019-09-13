@@ -8,5 +8,10 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="@types/jquery" level="application" />
+    <orderEntry type="library" name="@types/jqueryui" level="application" />
+    <orderEntry type="library" name="@types/htmlhint" level="application" />
+    <orderEntry type="library" name="JQueryUI" level="application" />
+    <orderEntry type="library" name="JQuery" level="application" />
   </component>
 </module>

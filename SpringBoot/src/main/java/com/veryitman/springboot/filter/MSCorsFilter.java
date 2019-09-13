@@ -11,7 +11,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-@Component
+//@Component
 //@WebFilter(urlPatterns = { "/signin/name" })
 public class MSCorsFilter implements Filter {
 
