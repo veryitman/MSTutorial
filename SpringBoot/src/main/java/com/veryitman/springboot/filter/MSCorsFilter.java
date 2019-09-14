@@ -11,12 +11,8 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-<<<<<<< HEAD
-@Component
-=======
 //@Component
 //@WebFilter(urlPatterns = { "/signin/name" })
->>>>>>> 57889208a2a707f94efe4b300842f36d88870f5f
 public class MSCorsFilter implements Filter {
 
     public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain) throws IOException, ServletException {
@@ -43,13 +39,10 @@ public class MSCorsFilter implements Filter {
 
         // 设置允许的请求方法
         response.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, DELETE");
-<<<<<<< HEAD
-        response.setHeader("Access-Control-Max-Age", "60");
-=======
+
         // 设置缓存时间，单位秒，在改时间内不需要再发送预检验请求，可以缓存该结果
         response.setHeader("Access-Control-Max-Age", "10");
         // 设置允许跨域请求包含content-type头
->>>>>>> 57889208a2a707f94efe4b300842f36d88870f5f
         response.setHeader("Access-Control-Allow-Headers", "*");
 
         System.out.println("Filter has been used.");

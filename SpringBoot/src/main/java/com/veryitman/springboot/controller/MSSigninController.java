@@ -19,11 +19,7 @@ public class MSSigninController {
      *
      * http://localhost:8080/signin/name?username=mark&userpwd=123
      */
-<<<<<<< HEAD
-//    @CrossOrigin
-=======
     @CrossOrigin(origins = {"*", "http://localhost:8082"})
->>>>>>> 57889208a2a707f94efe4b300842f36d88870f5f
     @RequestMapping(value = "/name", method = RequestMethod.GET)
     public MSResponse sigin(@RequestParam(value = "username") String userName, @RequestParam(value = "userpwd") String userPwd) {
         MSResponse response = new MSResponse();
