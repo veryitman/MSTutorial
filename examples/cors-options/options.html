@@ -39,15 +39,13 @@
             var url = "http://localhost:8080/signup/name";
 
             var data = {
-                "userId": 123,
-                "userName": "wangdachui"
+                "username": "itman",
+                "userpwd": 123
             };
             $.ajax({
                 url: url,
                 type: 'POST',
-                dataType: 'json',
-                data: $.toJSON(data),
-                contentType: 'application/json'
+                data: data,
             }).done(function (result) {
                 console.log("success");
                 console.log(result);

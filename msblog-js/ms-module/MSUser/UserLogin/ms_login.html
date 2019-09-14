@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <title>注册</title>
+    <title>登录</title>
 
     <meta
             name="viewport"
@@ -13,9 +13,9 @@
             media="all"
             type="text/css"
             rel="stylesheet"
-            href="../../../ms-style/register_css_file/social.css"
+            href="../../../ms-style/css_file/main.css"
     />
-    <script src="../../../ms-style/register_css_file/jquery.js.download"></script>
+    <script src="../../../ms-style/css_file/jquery.js.download"></script>
     <style type="text/css">
         body {
             background: #f5f5f5;
@@ -24,7 +24,7 @@
 </head>
 <body>
 <div class="xh-regbox">
-    <div class="xh-title" id="form-title">注册</div>
+    <div class="xh-title" id="form-title">登录</div>
     <form class="xh-form">
         <div class="register fields-error"></div>
         <div class="xh-form-group">
@@ -43,14 +43,6 @@
             (function ($) {
                 $(document).bind("on_form_register_submit", function (e, m) {
                     m.register_user_login = $("#register_register_user_login").val();
-                });
-            })(jQuery);
-        </script>
-
-        <script type="text/javascript">
-            (function ($) {
-                $(document).bind("on_form_register_submit", function (e, m) {
-                    m.register_user_email = $("#register_register_user_email").val();
                 });
             })(jQuery);
         </script>
@@ -83,18 +75,7 @@
                 });
             })(jQuery);
         </script>
-        <div class="xh-form-group">
-            <label class="required">确认密码</label>
-            <input
-                    type="password"
-                    id="register_register_repassword"
-                    name="register_repassword"
-                    value=""
-                    placeholder=""
-                    class="form-control "
-                    style=""
-            />
-        </div>
+
         <script type="text/javascript">
             (function ($) {
                 $(document).bind("on_form_register_submit", function (e, m) {
@@ -107,14 +88,14 @@
                     type="button"
                     id="btn-register"
                     onclick="window.xh_social_view.register();"
-                    class="xh-btn xh-btn-primary xh-btn-block xh-btn-lg"
-            >
-                注册
+                    class="xh-btn xh-btn-primary xh-btn-block xh-btn-lg">
+                登录
             </button>
         </div>
         <div class="xh-form-group xh-mT20"></div>
     </form>
 </div>
+
 <script type="text/javascript">
     (function ($) {
         if (!window.xh_social_view) {
@@ -219,7 +200,7 @@
                     window.xh_social_view.loading = false;
                     $("#btn-register")
                         .removeAttr("disabled")
-                        .text("注册");
+                        .text("登录");
                 },
                 success: function (m) {
                     var callback = {
@@ -234,7 +215,7 @@
                     }
 
                     if (m.errcode == 0) {
-                        window.xh_social_view.success("注册成功！", ".register");
+                        window.xh_social_view.success("登录成功！", ".register");
                         // location.href='https://captainbed.vip/';
                         location.href =
                             "https://captainbed.vip/wp-json/my/after_register/";
