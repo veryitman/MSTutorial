@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping(value = "signup") // 注意这里不要在signup前后加"/"
 public class MSSignupController {
 
+    @CrossOrigin(origins = {"*"})
     @PostMapping(value = "/name")
     public MSResponse signup(@RequestParam(value = "username") String userName, @RequestParam(value = "userpwd") String userPwd) {
         MSResponse response = new MSResponse();
@@ -24,7 +25,7 @@ public class MSSignupController {
         } else {
             response.setCode(MSResponseEnum.SUCCESS.getCode());
             response.setMsg(MSResponseEnum.SUCCESS.getMsg());
-            user = MSUserUtil.createDefaultUser(userName, userPwd);
+            user = MSUserUtil.createUser(userName, userPwd);
         }
 
         response.setResults(user);

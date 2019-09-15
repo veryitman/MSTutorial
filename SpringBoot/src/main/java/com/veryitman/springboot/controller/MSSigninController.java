@@ -1,7 +1,6 @@
 /**
  * 用户登录.
  */
-
 package com.veryitman.springboot.controller;
 
 import com.veryitman.springboot.model.MSResponse;
@@ -15,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 public class MSSigninController {
 
     /**
-     * User sigin with user's name and password.+
+     * User sigin with user's name and password.
      *
      * http://localhost:8080/signin/name?username=mark&userpwd=123
      */
@@ -24,13 +23,12 @@ public class MSSigninController {
     public MSResponse sigin(@RequestParam(value = "username") String userName, @RequestParam(value = "userpwd") String userPwd) {
         MSResponse response = new MSResponse();
         MSUser user = null;
-
         if (null == userName || null == userPwd || userName.length() <= 0 || userPwd.length() <= 0) {
             MSResponseEnum responseEnum = MSResponseEnum.Login4SiginInvalidInfo;
             response.setCode(responseEnum.getCode());
             response.setMsg(responseEnum.getMsg());
         } else {
-            user = MSUserUtil.createDefaultUser(userName, userPwd);
+            user = MSUserUtil.createUser(userName, userPwd);
             MSResponseEnum rspEnum = MSResponseEnum.SUCCESS;
             response.setCode(rspEnum.getCode());
             response.setMsg(rspEnum.getMsg());
