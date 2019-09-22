@@ -4,7 +4,7 @@ import com.veryitman.springboot.model.MSUser;
 
 public final class MSUserUtil {
 
-    public static MSUser createDefaultUser(String userName, String userPwd) {
+    public static MSUser createUser(String userName, String userPwd) {
         MSUser user = new MSUser();
         if (null == userName) {
             userName = "veryitman";

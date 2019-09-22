@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<!--head begin-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>登录</title>
+    <!--jquery jquery-json-->
+    <script type="text/javascript" src="../../../ms-lib/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../../../ms-lib/jquery.json.js"></script>
+    <meta
+        name="viewport"
+        content="width=device-width,initial-scale=1,user-scalable=0"/>
+    <link
+        media="all"
+        type="text/css"
+        rel="stylesheet"
+        href="../../../ms-style/css_file/main.css"/>
+    
+    <style type="text/css">
+        body {
+            background: #355565;
+        }
+    </style>
+</head>
+<!--head end-->
+<!--body begin-->
+<body>
+<div class="xh-regbox">
+    <div class="xh-title" id="form-title">登录</div>
+    <form class="xh-form">
+        <div class="register fields-error"></div>
+        <div class="xh-form-group">
+            <label class="required">用户名</label>
+            <input
+                type="text"
+                id="text_input_username"
+                name="login_username"
+                value=""
+                placeholder=""
+                class="form-control "
+                style=""/>
+        </div>
+        
+        <div class="xh-form-group">
+            <label class="required">密码</label>
+            <input
+                type="password"
+                id="text_input_password"
+                name="login_password"
+                value=""
+                placeholder=""
+                class="form-control "
+                style=""/>
+        </div>
+        
+        <div class="xh-form-group mt10">
+            <button
+                type="button"
+                id="btn-register"
+                onclick="ms_login();"
+                class="xh-btn xh-btn-primary xh-btn-block xh-btn-lg">登录
+            </button>
+        </div>
+        <div class="xh-form-group xh-mT20"></div>
+        
+        <script>
+            function ms_login() {
+                // 获取用户名和密码
+                var user_name = $('#text_input_username').val();
+                var user_pwd = $('#text_input_password').val();
+                if (user_name.length <= 0 || user_pwd.length <= 0) {
+                    console.log("User name or pwd is empty.");
+                    return;
+                }
+                var url = "http://localhost:8080/signin/name?username=" + user_name + "&userpwd=" + user_pwd;
+                $.ajax({
+                    url: url,
+                    type: 'GET',
+                    contentType: 'application/json'
+                }).done(function (result) {
+                    console.log("success");
+                    console.log(result);
+                }).fail(function () {
+                    console.log("login error.")
+                })
+            }
+        </script>
+    </form>
+</div>
+</body>
+<!--body end-->
+</html>
