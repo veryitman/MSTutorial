@@ -1,12 +1,14 @@
 package com.veryitman.springboot.controller.test;
 
 import org.springframework.web.bind.annotation.*;
+import springfox.documentation.annotations.ApiIgnore;
 
 import javax.websocket.server.PathParam;
 import javax.ws.rs.QueryParam;
 
 @RestController
 @RequestMapping(value = "spbtest")
+@ApiIgnore //忽略该类的API，不会参与文档生成
 public class MSTestController {
 
     // PathVariable
