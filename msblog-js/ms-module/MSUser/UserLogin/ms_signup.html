@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="">
 <!--head-->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -7,6 +7,7 @@
     <!-- 加入jquery、jquery.json库 -->
     <script type="text/javascript" src="../../../ms-lib/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="../../../ms-lib/jquery.json.js"></script>
+    <script type="text/javascript" src="ms_user.js"></script>
     <meta
         name="viewport"
         content="width=device-width,initial-scale=1,user-scalable=0"/>
@@ -96,21 +97,7 @@
                     console.log("The register's pwd is different.");
                     return;
                 }
-                var url = "http://localhost:8080/signup/name";
-                var data = {
-                    "username": "itman",
-                    "userpwd": 123
-                };
-                $.ajax({
-                    url: url,
-                    type: 'POST',
-                    data: data
-                }).done(function (result) {
-                    console.log("success");
-                    console.log(result);
-                }).fail(function () {
-                    console.log("error");
-                })
+                signup_req_name(r_user_name, r_user_pwd, r_user_pwd_again);
             }
         </script>
     </form>
