@@ -62,9 +62,9 @@ public class SpringbootApplicationTests {
     }
 
     @Test
-    public void generateMarkdownDocs() throws Exception {
+    public void generateDocsFile() throws Exception {
         Swagger2MarkupConfig config = new Swagger2MarkupConfigBuilder()
-                .withMarkupLanguage(MarkupLanguage.MARKDOWN)
+                .withMarkupLanguage(MarkupLanguage.ASCIIDOC)
                 .build();
 
         // 该地址不要写错
