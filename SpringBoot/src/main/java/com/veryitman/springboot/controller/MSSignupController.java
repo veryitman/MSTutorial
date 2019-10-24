@@ -20,7 +20,7 @@ public class MSSignupController {
 
     @CrossOrigin(origins = {"*"})
     @PostMapping(value = "/name")
-    @ApiOperation(value = "用户注册", httpMethod = "POST", notes = "用户名和密码注册")
+    @ApiOperation(value = "用户名注册", httpMethod = "POST", notes = "用户名和密码注册")
     @ApiImplicitParams({
             @ApiImplicitParam(name = "username", value = "注册的用户名", required = true),
             @ApiImplicitParam(name = "userpwd", value = "注册的密码", required = true)

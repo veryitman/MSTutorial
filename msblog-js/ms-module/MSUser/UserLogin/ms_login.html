@@ -7,6 +7,7 @@
     <!--jquery jquery-json-->
     <script type="text/javascript" src="../../../ms-lib/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="../../../ms-lib/jquery.json.js"></script>
+    <script type="text/javascript" src="ms_user.js"></script>
     <meta
         name="viewport"
         content="width=device-width,initial-scale=1,user-scalable=0"/>
@@ -65,9 +66,15 @@
         
         <script>
             function ms_login() {
+
                 // 获取用户名和密码
                 var user_name = $('#text_input_username').val();
                 var user_pwd = $('#text_input_password').val();
+
+                login_req_name(user_name, user_pwd);
+
+                return;
+
                 if (user_name.length <= 0 || user_pwd.length <= 0) {
                     console.log("User name or pwd is empty.");
                     return;
