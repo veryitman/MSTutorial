@@ -19,7 +19,7 @@ public class MSTestController {
 
     @RequestMapping(value = "/users2/{page}/{pageSize}", method = RequestMethod.GET)
     public String getUsers2(@PathVariable(value = "pageSize") String page, @PathVariable(value = "page") String pageSize) {
-        return "Get user list2. " +  "page: " + page + " - pageSize: " + pageSize;
+        return "Get user list2. " + "page: " + page + " - pageSize: " + pageSize;
     }
 
     // PathParam
