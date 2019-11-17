@@ -7,6 +7,7 @@ import org.springframework.boot.web.servlet.ServletComponentScan;
 
 //@ServletComponentScan
 //@WebAppConfiguration
+// 去掉数据库依赖
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
 public class SpringbootApplication {
 
