@@ -7,7 +7,10 @@ import java.io.Serializable;
 @Data
 public class MSUser implements Serializable {
 
-    private String userID;
+    public static final int GENDER_MALE = 1; //男
+    public static final int GENDER_FEMALE = 2; //女
+
+    private Integer userID;
 
     // 账号名称，用于登录，不可以修改
     private String accountName;
@@ -24,4 +27,7 @@ public class MSUser implements Serializable {
 
     // 座右铭；格言；箴言
     private String motto;
+
+    // 手机号码
+    private String phone;
 }

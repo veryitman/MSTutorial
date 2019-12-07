@@ -17,7 +17,7 @@ public final class MSUserUtil {
         user.setAccountPwd(userPwd);
         user.setGender(1);
         user.setAge(20);
-        user.setUserID("1");
+        user.setUserID(1);
         user.setMotto("");
 
         return user;
