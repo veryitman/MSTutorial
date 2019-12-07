@@ -39,7 +39,7 @@ public class MSUserServiceImpl implements MSUserService {
                 "`user_motto` VARCHAR(120)," +
                 "`user_phone` VARCHAR(27)," +
                 "PRIMARY KEY ( `id` )" +
-                ")ENGINE=InnoDB DEFAULT CHARSET=utf8;";
+                ")ENGINE=InnoDB DEFAULT CHARSET=utf8";
         jdbcTemplate.execute(create_table_sql);
 
         affectedRows = jdbcTemplate.update("INSERT INTO user (" +

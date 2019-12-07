@@ -53,6 +53,8 @@ public class MSDBTests {
         user.setAge(25);
         user.setGender(MSUser.GENDER_MALE);
         user.setPhone("17122036530");
+
+        // 增加user数据
         msUserService.createUser(user);
     }
 
