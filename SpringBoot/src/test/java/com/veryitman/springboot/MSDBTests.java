@@ -15,6 +15,12 @@ import org.springframework.test.context.junit4.SpringRunner;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Create db： create database mzc_user default character set utf8mb4 collate utf8mb4_unicode_ci;
+ *
+ * delete db：drop database mzc_user;
+ */
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class MSDBTests {
