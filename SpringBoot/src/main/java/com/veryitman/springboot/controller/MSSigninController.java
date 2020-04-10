@@ -6,14 +6,22 @@ package com.veryitman.springboot.controller;
 import com.veryitman.springboot.model.MSResponse;
 import com.veryitman.springboot.model.MSResponseEnum;
 import com.veryitman.springboot.model.MSUser;
+import com.veryitman.springboot.service.MSUserService;
 import com.veryitman.springboot.util.MSUserUtil;
 import io.swagger.annotations.*;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+import java.util.Map;
 
 @Api(value="signin", tags="用户模块")
 @RestController
 @RequestMapping(value = "signin") // 注意这里不要在signin前后加"/"
 public class MSSigninController {
+
+    @Autowired
+    private MSUserService userService;
 
     /**
      * User sigin with user's name and password.
@@ -36,9 +44,25 @@ public class MSSigninController {
             response.setMsg(responseEnum.getMsg());
         } else {
             user = MSUserUtil.createUser(userName, userPwd);
-            MSResponseEnum rspEnum = MSResponseEnum.SUCCESS;
-            response.setCode(rspEnum.getCode());
-            response.setMsg(rspEnum.getMsg());
+            // 检查用户数据库的‘user’表中是否有该用户？
+            List<Map> query_users = userService.queryUserByUserName(userName);
+            if (query_users.isEmpty()) {
+                MSResponseEnum responseEnum = MSResponseEnum.Login4SiginInvalidInfo;
+                response.setCode(responseEnum.getCode());
+                response.setMsg(responseEnum.getMsg());
+            } else {
+                Map user_map = query_users.get(0);
+                String query_user_name = (String) user_map.get("user_name");
+                if (!query_user_name.equals(userName)) {
+                    MSResponseEnum responseEnum = MSResponseEnum.Login4SiginInvalidInfo;
+                    response.setCode(responseEnum.getCode());
+                    response.setMsg(responseEnum.getMsg());
+                } else {
+                    MSResponseEnum rspEnum = MSResponseEnum.SUCCESS;
+                    response.setCode(rspEnum.getCode());
+                    response.setMsg(rspEnum.getMsg());
+                }
+            }
         }
 
         response.setResults(user);

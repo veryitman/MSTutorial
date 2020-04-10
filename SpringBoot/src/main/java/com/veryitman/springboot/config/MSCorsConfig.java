@@ -1,6 +1,6 @@
 package com.veryitman.springboot.config;
 
-import org.springframework.context.annotation.Configuration;
+//import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 
@@ -16,10 +16,10 @@ public class MSCorsConfig extends WebMvcConfigurationSupport {
                 .allowedMethods("GET", "POST", "DELETE", "PUT")
                 .maxAge(3600);
 
-//        registry.addMapping("/**")
-//                .allowedOrigins("*")
-//                .allowCredentials(true)
-//                .allowedMethods("GET", "POST", "DELETE", "PUT")
-//                .maxAge(3600);
+        //        registry.addMapping("/**")
+        //                .allowedOrigins("*")
+        //                .allowCredentials(true)
+        //                .allowedMethods("GET", "POST", "DELETE", "PUT")
+        //                .maxAge(3600);
     }
 }

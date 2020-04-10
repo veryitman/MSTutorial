@@ -19,13 +19,8 @@ public class MSUserServiceImpl implements MSUserService {
     JdbcTemplate jdbcTemplate;
 
     @Override
-    public int createUser(MSUser user) {
-        int affectedRows;
-        log.debug("MSBlog, create user.");
-
-        if (null == user) {
-            return 0;
-        }
+    public void createUserTable() {
+        log.debug("MSBlog, create user's table.");
 
         // 创建user表
         String create_table_sql = "CREATE TABLE IF NOT EXISTS `user`(" +
@@ -33,16 +28,25 @@ public class MSUserServiceImpl implements MSUserService {
                 "`user_id` INT UNSIGNED," +
                 "`user_name` VARCHAR(51) NOT NULL," +
                 "`user_pwd` VARCHAR(21) NOT NULL," +
-                "`user_nickname` VARCHAR(51)," +
+                "`user_nickname` VARCHAR(51) DEFAULT ''," +
                 "`user_age` TINYINT UNSIGNED," +
                 "`user_gender` TINYINT UNSIGNED," +
-                "`user_motto` VARCHAR(120)," +
-                "`user_phone` VARCHAR(27)," +
+                "`user_motto` VARCHAR(120) DEFAULT ''," +
+                "`user_phone` VARCHAR(27) DEFAULT ''," +
                 "PRIMARY KEY ( `id` )" +
                 ") ENGINE=InnoDB DEFAULT CHARSET=utf8mb4";
         jdbcTemplate.execute(create_table_sql);
+    }
 
-        affectedRows = jdbcTemplate.update("INSERT INTO user (" +
+    @Override
+    public int addUser(MSUser user) {
+        log.debug("MSBlog, add user into user_table.");
+
+        if (null == user) {
+            return -1;
+        }
+
+        int affectedRows = jdbcTemplate.update("INSERT INTO user (" +
                         "user_id, " +
                         "user_name, " +
                         "user_pwd, " +
@@ -67,6 +71,7 @@ public class MSUserServiceImpl implements MSUserService {
         } else {
             log.warn("MSBlog, insert data to user_table failed.");
         }
+
         return affectedRows;
     }
 

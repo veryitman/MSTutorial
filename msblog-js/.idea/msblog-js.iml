@@ -13,5 +13,8 @@
     <orderEntry type="library" name="@types/htmlhint" level="application" />
     <orderEntry type="library" name="JQueryUI" level="application" />
     <orderEntry type="library" name="JQuery" level="application" />
+    <orderEntry type="library" name="jq" level="application" />
+    <orderEntry type="library" name="jqui" level="application" />
+    <orderEntry type="library" name="@types/jquery" level="application" />
   </component>
 </module>

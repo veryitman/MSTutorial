@@ -19,6 +19,7 @@ public final class MSUserUtil {
         user.setAge(20);
         user.setUserID(1);
         user.setMotto("");
+        user.setPhone("");
 
         return user;
     }

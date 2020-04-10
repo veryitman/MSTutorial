@@ -50,6 +50,12 @@ public class MSDBTests {
 
     @Test
     public void createUserSQLTest() {
+        // 增加user数据
+        msUserService.createUserTable();
+    }
+
+    @Test
+    public void addUser() {
         MSUser user = new MSUser();
         user.setUserID(1);
         user.setAccountName("mzc");
@@ -59,9 +65,7 @@ public class MSDBTests {
         user.setAge(25);
         user.setGender(MSUser.GENDER_MALE);
         user.setPhone("17122036530");
-
-        // 增加user数据
-        msUserService.createUser(user);
+        msUserService.addUser(user);
     }
 
     @Test

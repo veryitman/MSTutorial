@@ -18,10 +18,19 @@ function login_req_name(username, passwd) {
         contentType: 'application/json'
     }).done(function (result) {
         console.log("success");
-        console.log(result);
-    }).fail(function () {
-        console.log("login error.")
-    })
+        console.log("data: ", result);
+        user_obj = result.results;
+        console.log('user_obj.accountName: ', user_obj.accountName);
+        if (0 != user_obj.userID.length) {
+            alert("成功");
+        } else {
+            alert("注册失败");
+        }
+    }).fail(function (data) {
+        console.log("login error.", data)
+    }).always(function (t) {
+        console.log("always./complete.", t);
+    });
 }
 
 function signup_req_name(username, passwd, again_passwd) {
@@ -51,8 +60,18 @@ function signup_req_name(username, passwd, again_passwd) {
         data: data
     }).done(function (result) {
         console.log("success");
-        console.log(result);
-    }).fail(function () {
-        console.log("error");
-    })
+        console.log("result: ", result);
+        console.log("result.results: ", result.results);
+        user_obj = result.results;
+        console.log('user_obj.accountName: ', user_obj.accountName);
+        if (0 != user_obj.userID.length) {
+            alert("注册成功");
+        } else {
+            alert("注册失败");
+        }
+    }).fail(function (data) {
+        console.log("error", data);
+    }).always(function (t) {
+        console.log("always./complete.", t);
+    });
 }
