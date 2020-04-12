@@ -11,6 +11,7 @@ import com.veryitman.springboot.util.MSUserUtil;
 import io.swagger.annotations.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import com.alibaba.fastjson.*;
 
 import java.util.List;
 import java.util.Map;
@@ -51,14 +52,15 @@ public class MSSigninController {
                 response.setMsg(responseEnum.getMsg());
             } else {// 有这个用户
                 Map user_map = query_users.get(0);
-                String query_user_name = (String) user_map.get("user_name");
+                String query_user_name = (String) user_map.get("accountName");
                 // 没有对应的用户名
                 if (!query_user_name.equals(userName)) {
                     MSResponseEnum responseEnum = MSResponseEnum.LoginNoSuchUser;
                     response.setCode(responseEnum.getCode());
                     response.setMsg(responseEnum.getMsg());
                 } else {// 查询到了该用户
-                    user = MSUserUtil.createUser(userName, userPwd);
+                    // 将查询出来的map对象使用FastJson转换为MSUser对象
+                    user = JSON.parseObject(JSON.toJSONString(user_map), MSUser.class);
                     MSResponseEnum rspEnum = MSResponseEnum.SUCCESS;
                     response.setCode(rspEnum.getCode());
                     response.setMsg(rspEnum.getMsg());

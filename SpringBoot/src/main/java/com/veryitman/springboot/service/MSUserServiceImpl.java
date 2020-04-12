@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
@@ -25,14 +26,14 @@ public class MSUserServiceImpl implements MSUserService {
         // 创建user表
         String create_table_sql = "CREATE TABLE IF NOT EXISTS `user`(" +
                 "`id` INT UNSIGNED AUTO_INCREMENT," +
-                "`user_id` INT UNSIGNED," +
-                "`user_name` VARCHAR(51) NOT NULL," +
-                "`user_pwd` VARCHAR(21) NOT NULL," +
-                "`user_nickname` VARCHAR(51) DEFAULT ''," +
-                "`user_age` TINYINT UNSIGNED," +
-                "`user_gender` TINYINT UNSIGNED," +
-                "`user_motto` VARCHAR(120) DEFAULT ''," +
-                "`user_phone` VARCHAR(27) DEFAULT ''," +
+                "`userID` INT UNSIGNED," +
+                "`accountName` VARCHAR(51) NOT NULL," +
+                "`accountPwd` VARCHAR(21) NOT NULL," +
+                "`nickName` VARCHAR(51) DEFAULT ''," +
+                "`age` TINYINT UNSIGNED," +
+                "`gender` TINYINT UNSIGNED," +
+                "`motto` VARCHAR(120) DEFAULT ''," +
+                "`phone` VARCHAR(27) DEFAULT ''," +
                 "PRIMARY KEY ( `id` )" +
                 ") ENGINE=InnoDB DEFAULT CHARSET=utf8mb4";
         jdbcTemplate.execute(create_table_sql);
@@ -47,14 +48,14 @@ public class MSUserServiceImpl implements MSUserService {
         }
 
         int affectedRows = jdbcTemplate.update("INSERT INTO user (" +
-                        "user_id, " +
-                        "user_name, " +
-                        "user_pwd, " +
-                        "user_nickname, " +
-                        "user_age, " +
-                        "user_gender, " +
-                        "user_motto, " +
-                        "user_phone" +
+                        "userID, " +
+                        "accountName, " +
+                        "accountPwd, " +
+                        "nickName, " +
+                        "age, " +
+                        "gender, " +
+                        "motto, " +
+                        "phone" +
                         ") " +
                         "VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
                 user.getUserID(),
@@ -78,7 +79,7 @@ public class MSUserServiceImpl implements MSUserService {
     @Override
     public int deleteByUid(Integer uid) {
         log.info("MSBlog, delete user by uid.");
-        int affectedRows = jdbcTemplate.update("DELETE FROM user WHERE user_id = ?", uid);
+        int affectedRows = jdbcTemplate.update("DELETE FROM user WHERE userID = ?", uid);
         return affectedRows;
     }
 
@@ -86,7 +87,7 @@ public class MSUserServiceImpl implements MSUserService {
     public List<Map> queryUserByUid(Integer uid) {
         log.info("MSBlog, query user by uid.");
         List list;
-        list = jdbcTemplate.queryForList("SELECT user_id, user_name, user_pwd, user_nickname, user_age, user_gender, user_motto, user_phone FROM user WHERE user_id = ?", uid);
+        list = jdbcTemplate.queryForList("SELECT userID, accountName, accountPwd, nickName, age, gender, motto, phone FROM user WHERE userID = ?", uid);
         if (null != list && list.size() > 0) {
             log.info(list.get(0).toString());
         } else {
@@ -101,9 +102,9 @@ public class MSUserServiceImpl implements MSUserService {
         List list = null;
         if (null == userName || userName.length() <= 0) {
             log.error("MSBlog, User name must be not empty.");
-            return list;
+            return Collections.emptyList();
         }
-        String sql = "SELECT user_id, user_name, user_pwd, user_nickname, user_age, user_gender, user_motto, user_phone FROM  user WHERE user_name = \'" + userName + "\'";
+        String sql = "SELECT userID, accountName, accountPwd, nickName, age, gender, motto, phone FROM  user WHERE accountName = \'" + userName + "\'";
         list = jdbcTemplate.queryForList(sql);
         if (null != list && list.size() > 0) {
             log.info(list.get(0).toString());
