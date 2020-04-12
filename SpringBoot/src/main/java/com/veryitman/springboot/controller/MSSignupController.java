@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Map;
 
-@Api(value = "signup", tags = "用户模块")
+@Api(value = "signup", tags = "用户模块-注册")
 @RestController
 @RequestMapping(value = "signup") // 注意这里不要在signup前后加"/"
 public class MSSignupController {
@@ -41,20 +41,19 @@ public class MSSignupController {
             response.setMsg(signupError.getMsg());
             response.setCode(signupError.getCode());
         } else {
-            user = MSUserUtil.createUser(userName, userPwd);
             // 创建user表
             userService.createUserTable();
             // 检查用户数据库的‘user’表中是否有该用户？
             List<Map> query_users = userService.queryUserByUserName(userName);
-            if (null == query_users || query_users.isEmpty()) { // 没有该用户数据！
-                // 并插入一条用户数据到数据表中
+            if (null == query_users || query_users.isEmpty()) {// 没有该用户的数据
+                user = MSUserUtil.createUser(userName, userPwd);
+                // 插入一条用户数据到数据表中
                 userService.addUser(user);
                 response.setCode(MSResponseEnum.SUCCESS.getCode());
                 response.setMsg(MSResponseEnum.SUCCESS.getMsg());
-                user = MSUserUtil.createUser(userName, userPwd);
-            } else { // 用户数据库的‘user’表中有该用户信息！
-                // 返回错误信息，该用户无法完成注册
-                MSResponseEnum signupError = MSResponseEnum.SignupInvalidInfo;
+            } else {// 用户数据库的‘user’表中有该用户信息
+                // 返回错误信息：该用户已经注册过了
+                MSResponseEnum signupError = MSResponseEnum.SignupHasExistUser;
                 response.setMsg(signupError.getMsg());
                 response.setCode(signupError.getCode());
             }
