@@ -7,7 +7,9 @@ import java.util.Map;
 
 public interface MSUserService {
 
-    int createUser(MSUser user);
+    void createUserTable();
+
+    int addUser(MSUser user);
 
     int deleteByUid(Integer uid);
 

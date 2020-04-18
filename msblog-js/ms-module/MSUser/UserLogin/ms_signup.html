@@ -74,6 +74,15 @@
                 class="xh-btn xh-btn-primary xh-btn-block xh-btn-lg">注册
             </button>
         </div>
+        
+        <div class="xh-form-group mt10">
+            <button
+                type="button"
+                id="btn-go-login"
+                onclick="ms_go_login();"
+                class="xh-btn xh-btn-primary xh-btn-block xh-btn-lg">已有账号，去登录
+            </button>
+        </div>
         <div class="xh-form-group xh-mT20"></div>
         <script>
             function ms_register() {
@@ -97,7 +106,20 @@
                     console.log("The register's pwd is different.");
                     return;
                 }
-                signup_req_name(r_user_name, r_user_pwd, r_user_pwd_again);
+                signup_req_name(r_user_name, r_user_pwd, r_user_pwd_again, function (code) {
+                    if (0 != code) {
+                        console.log("fail and code:", code);
+                    } else {
+                        console.log("success.");
+                        // 去注册页面
+                        javascript:location.href = 'ms_login.html';
+                    }
+                });
+            }
+            
+            function ms_go_login() {
+                // 打开登录页面
+                javascript:location.href = 'ms_login.html';
             }
         </script>
     </form>

@@ -6,17 +6,25 @@ package com.veryitman.springboot.controller;
 import com.veryitman.springboot.model.MSResponse;
 import com.veryitman.springboot.model.MSResponseEnum;
 import com.veryitman.springboot.model.MSUser;
+import com.veryitman.springboot.service.MSUserService;
 import com.veryitman.springboot.util.MSUserUtil;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-@Api(value="signup", tags="用户模块")
+import java.util.List;
+import java.util.Map;
+
+@Api(value = "signup", tags = "用户模块-注册")
 @RestController
 @RequestMapping(value = "signup") // 注意这里不要在signup前后加"/"
 public class MSSignupController {
+
+    @Autowired
+    private MSUserService userService;
 
     @CrossOrigin(origins = {"*"})
     @PostMapping(value = "/name")
@@ -33,9 +41,22 @@ public class MSSignupController {
             response.setMsg(signupError.getMsg());
             response.setCode(signupError.getCode());
         } else {
-            response.setCode(MSResponseEnum.SUCCESS.getCode());
-            response.setMsg(MSResponseEnum.SUCCESS.getMsg());
-            user = MSUserUtil.createUser(userName, userPwd);
+            // 创建user表
+            userService.createUserTable();
+            // 检查用户数据库的‘user’表中是否有该用户？
+            List<Map> query_users = userService.queryUserByUserName(userName);
+            if (null == query_users || query_users.isEmpty()) {// 没有该用户的数据
+                user = MSUserUtil.createUser(userName, userPwd);
+                // 插入一条用户数据到数据表中
+                userService.addUser(user);
+                response.setCode(MSResponseEnum.SUCCESS.getCode());
+                response.setMsg(MSResponseEnum.SUCCESS.getMsg());
+            } else {// 用户数据库的‘user’表中有该用户信息
+                // 返回错误信息：该用户已经注册过了
+                MSResponseEnum signupError = MSResponseEnum.SignupHasExistUser;
+                response.setMsg(signupError.getMsg());
+                response.setCode(signupError.getCode());
+            }
         }
 
         response.setResults(user);

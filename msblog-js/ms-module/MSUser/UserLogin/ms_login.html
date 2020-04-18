@@ -62,34 +62,50 @@
                 class="xh-btn xh-btn-primary xh-btn-block xh-btn-lg">登录
             </button>
         </div>
+        <div class="xh-form-group mt10">
+            <button
+                type="button"
+                id="btn-go-register"
+                onclick="ms_go_register();"
+                class="xh-btn xh-btn-primary xh-btn-block xh-btn-lg">无账号，去注册
+            </button>
+        </div>
         <div class="xh-form-group xh-mT20"></div>
         
         <script>
             function ms_login() {
-
                 // 获取用户名和密码
                 var user_name = $('#text_input_username').val();
                 var user_pwd = $('#text_input_password').val();
-
-                login_req_name(user_name, user_pwd);
-
-                return;
-
-                if (user_name.length <= 0 || user_pwd.length <= 0) {
-                    console.log("User name or pwd is empty.");
+    
+                if (user_name.length <= 0) {
+                    console.log('The user_name\'s length must not be zero');
                     return;
                 }
-                var url = "http://localhost:8080/signin/name?username=" + user_name + "&userpwd=" + user_pwd;
-                $.ajax({
-                    url: url,
-                    type: 'GET',
-                    contentType: 'application/json'
-                }).done(function (result) {
-                    console.log("success");
-                    console.log(result);
-                }).fail(function () {
-                    console.log("login error.")
-                })
+    
+                if (user_pwd.length <= 0) {
+                    console.log('The user_pwd\'s length must not be zero');
+                    return;
+                }
+
+                login_req_name(user_name, user_pwd, function (code) {
+                    if (0 != code) {
+                        console.log("fail and code:", code);
+                        // 去注册页面
+                        javascript:location.href = 'ms_signup.html';
+                    } else {
+                        console.log("success.");
+                        setTimeout(function () {
+                            // 刷新当前页面
+                            location.reload();
+                        }, 2000);
+                    }
+                });
+            }
+            
+            function ms_go_register() {
+                // 跳转到注册页面
+                javascrpt:location.href = 'ms_signup.html';
             }
         </script>
     </form>

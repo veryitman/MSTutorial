@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{@types/htmlhint, @types/jquery, @types/jqueryui, JQuery, JQueryUI}" />
+    <file url="PROJECT" libraries="{@types/jquery, jq, jqui}" />
   </component>
 </project>

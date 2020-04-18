@@ -13,10 +13,14 @@ public enum MSResponseEnum {
      */
     Login4SiginInvalidInfo(100001, "User's name or password is invalid."),
 
+    LoginNoSuchUser(100002, "No such user."),
+
     /**
      * Signup error.
      */
-    SignupInvalidInfo(100005, "User's name or password is invalid");
+    SignupInvalidInfo(110005, "User's name or password is invalid"),
+
+    SignupHasExistUser(110006, "User has existed and go to siguin");
 
     private int code;
     private String msg;
