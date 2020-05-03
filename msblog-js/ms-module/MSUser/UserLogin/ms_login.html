@@ -9,14 +9,14 @@
     <script type="text/javascript" src="../../../ms-lib/jquery.json.js"></script>
     <script type="text/javascript" src="ms_user.js"></script>
     <meta
-        name="viewport"
-        content="width=device-width,initial-scale=1,user-scalable=0"/>
+            name="viewport"
+            content="width=device-width,initial-scale=1,user-scalable=0"/>
     <link
-        media="all"
-        type="text/css"
-        rel="stylesheet"
-        href="../../../ms-style/css_file/main.css"/>
-    
+            media="all"
+            type="text/css"
+            rel="stylesheet"
+            href="../../../ms-style/css_file/main.css"/>
+
     <style type="text/css">
         body {
             background: #355565;
@@ -33,56 +33,56 @@
         <div class="xh-form-group">
             <label class="required">用户名</label>
             <input
-                type="text"
-                id="text_input_username"
-                name="login_username"
-                value=""
-                placeholder=""
-                class="form-control "
-                style=""/>
+                    type="text"
+                    id="text_input_username"
+                    name="login_username"
+                    value=""
+                    placeholder=""
+                    class="form-control "
+                    style=""/>
         </div>
-        
+
         <div class="xh-form-group">
             <label class="required">密码</label>
             <input
-                type="password"
-                id="text_input_password"
-                name="login_password"
-                value=""
-                placeholder=""
-                class="form-control "
-                style=""/>
+                    type="password"
+                    id="text_input_password"
+                    name="login_password"
+                    value=""
+                    placeholder=""
+                    class="form-control "
+                    style=""/>
         </div>
-        
+
         <div class="xh-form-group mt10">
             <button
-                type="button"
-                id="btn-register"
-                onclick="ms_login();"
-                class="xh-btn xh-btn-primary xh-btn-block xh-btn-lg">登录
+                    type="button"
+                    id="btn-register"
+                    onclick="ms_login();"
+                    class="xh-btn xh-btn-primary xh-btn-block xh-btn-lg">登录
             </button>
         </div>
         <div class="xh-form-group mt10">
             <button
-                type="button"
-                id="btn-go-register"
-                onclick="ms_go_register();"
-                class="xh-btn xh-btn-primary xh-btn-block xh-btn-lg">无账号，去注册
+                    type="button"
+                    id="btn-go-register"
+                    onclick="ms_go_register();"
+                    class="xh-btn xh-btn-primary xh-btn-block xh-btn-lg">无账号，去注册
             </button>
         </div>
         <div class="xh-form-group xh-mT20"></div>
-        
+
         <script>
             function ms_login() {
                 // 获取用户名和密码
                 var user_name = $('#text_input_username').val();
                 var user_pwd = $('#text_input_password').val();
-    
+
                 if (user_name.length <= 0) {
                     console.log('The user_name\'s length must not be zero');
                     return;
                 }
-    
+
                 if (user_pwd.length <= 0) {
                     console.log('The user_pwd\'s length must not be zero');
                     return;
@@ -102,7 +102,7 @@
                     }
                 });
             }
-            
+
             function ms_go_register() {
                 // 跳转到注册页面
                 javascrpt:location.href = 'ms_signup.html';
