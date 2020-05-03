@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <option name="BUILD_PROCESS_HEAP_SIZE" value="800" />
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ms-admin-client" />
+        <module name="ms-admin" />
+        <module name="ms-user" />
+        <module name="server-project" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ms-admin" target="1.8" />
+      <module name="ms-admin-client" target="1.8" />
+      <module name="ms-user" target="1.8" />
+      <module name="server-project" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ms-admin" options="-parameters" />
+      <module name="ms-admin-client" options="-parameters" />
+      <module name="ms-user" options="-parameters" />
+      <module name="server-project" options="-parameters" />
+    </option>
+  </component>
+</project>

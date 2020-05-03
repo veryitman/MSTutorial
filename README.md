@@ -1,2 +1,1 @@
-# MSTutorial
-Micro service using springboot that includes iOS or Android client.
+Micro service using Spring Boot that includes iOS or Android and H5.
