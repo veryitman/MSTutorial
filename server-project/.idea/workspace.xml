@@ -2,101 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c51a22ce-82ad-4d0b-b9d3-f0e747e8fc09" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_12_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_12_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_13_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_30.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_2_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_2_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_2_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_2_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_2_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_2_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_2_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_6_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-admin-client/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-admin-client/src/main/java/com/veryitman/adminclient/MZAdminClientApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-admin-client/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-admin/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-admin/src/main/java/com/veryitman/admin/MZAdminApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-admin/src/main/java/com/veryitman/admin/MZSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-admin/src/main/java/com/veryitman/admin/MZWebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-admin/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/project-code/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/project-code/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/project-code/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/project-code/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/project-code/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/project-code/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/project-code/app/src/main/res/drawable/ic_home_black_24dp.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/project-code/app/src/main/res/drawable/ic_home_black_24dp.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/project-code/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/project-code/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/project-code/app/src/main/res/drawable/ic_notifications_black_24dp.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/project-code/app/src/main/res/drawable/ic_notifications_black_24dp.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/project-code/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/project-code/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/project-code/app/src/main/res/menu/bottom_nav_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/project-code/app/src/main/res/menu/bottom_nav_menu.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/project-code/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/project-code/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/project-code/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/project-code/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/project-code/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/project-code/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringBoot/src/main/java/com/veryitman/springboot/config/MSCorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot/src/main/java/com/veryitman/springboot/config/MSCorsConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringBoot/src/main/java/com/veryitman/springboot/controller/MSSigninController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot/src/main/java/com/veryitman/springboot/controller/MSSigninController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringBoot/src/main/java/com/veryitman/springboot/util/MSUserUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot/src/main/java/com/veryitman/springboot/util/MSUserUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringBoot/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot/src/main/resources/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringBoot/src/test/java/com/veryitman/springboot/MSDBTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot/src/test/java/com/veryitman/springboot/MSDBTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examples/cors-options/jquery.json.js" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/cors-options/jquery.json.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examples/cors-options/options.html" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/cors-options/options.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../iOS/MSBlog/MSBlog/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" afterPath="$PROJECT_DIR$/../iOS/MSBlog/MSBlog/Assets.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../iOS/MSBlog/MSBlog/Assets.xcassets/Contents.json" beforeDir="false" afterPath="$PROJECT_DIR$/../iOS/MSBlog/MSBlog/Assets.xcassets/Contents.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msblog-js/ms-lib/jquery.json.js" beforeDir="false" afterPath="$PROJECT_DIR$/../msblog-js/ms-lib/jquery.json.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msblog-js/ms-module/MSUser/UserLogin/ms_login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../msblog-js/ms-module/MSUser/UserLogin/ms_login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msblog-js/ms-module/MSUser/UserLogin/ms_signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/../msblog-js/ms-module/MSUser/UserLogin/ms_signup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msblog-js/ms-style/css_file/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../msblog-js/ms-style/css_file/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msblog/android/app/src/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../msblog/android/app/src/debug/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msblog/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../msblog/android/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msblog/android/app/src/main/java/com/veryitman/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../msblog/android/app/src/main/java/com/veryitman/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msblog/android/app/src/main/res/drawable/launch_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../msblog/android/app/src/main/res/drawable/launch_background.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msblog/android/app/src/profile/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../msblog/android/app/src/profile/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msblog/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" afterPath="$PROJECT_DIR$/../msblog/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msblog/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json" beforeDir="false" afterPath="$PROJECT_DIR$/../msblog/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-admin/src/main/java/com/veryitman/admin/MZSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-admin/src/main/java/com/veryitman/admin/config/MZSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-admin/src/main/java/com/veryitman/admin/MZWebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-admin/src/main/java/com/veryitman/admin/config/MZWebSecurityConfig.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -116,8 +24,7 @@
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -130,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ms-admin/src/main/java/com/veryitman/admin/MZSecurityConfig.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ms-admin/src/main/java/com/veryitman/admin/config/MZSecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="36" column="56" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="56" />
+            <state relative-caret-position="171">
+              <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -142,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ms-admin/src/main/java/com/veryitman/admin/MZWebSecurityConfig.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ms-admin/src/main/java/com/veryitman/admin/config/MZWebSecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="129" lean-forward="true" selection-start-line="15" selection-start-column="129" selection-end-line="15" selection-end-column="129" />
+            <state relative-caret-position="342">
+              <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -217,6 +124,8 @@
         <option value="$PROJECT_DIR$/ms-admin/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/ms-admin/src/main/java/com/veryitman/admin/MZSecurityConfig.java" />
         <option value="$PROJECT_DIR$/ms-admin/src/main/java/com/veryitman/admin/MZWebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/ms-admin/src/main/java/com/veryitman/admin/config/MZSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/ms-admin/src/main/java/com/veryitman/admin/config/MZWebSecurityConfig.java" />
       </list>
     </option>
   </component>
@@ -227,7 +136,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
     <option name="y" value="212" />
     <option name="width" value="1401" />
@@ -289,7 +198,8 @@
               <item name="ms-admin" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ms-tutorial" type="b2602c69:ProjectViewProjectNode" />
@@ -308,6 +218,23 @@
               <item name="ms-user" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ms-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server-project" type="462c0819:PsiDirectoryNode" />
+              <item name="ms-user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ms-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server-project" type="462c0819:PsiDirectoryNode" />
+              <item name="ms-user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ms-tutorial" type="b2602c69:ProjectViewProjectNode" />
@@ -356,6 +283,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.veryitman.admin.config" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\github\MSTutorial\server-project\ms-admin-client\src\main\resources" />
       <recent name="E:\github\MSTutorial\server-project\ms-admin\src\main\resources" />
@@ -421,16 +351,15 @@
       <option name="presentableId" value="Default" />
       <updated>1588384505477</updated>
       <workItem from="1588384509857" duration="18302000" />
-      <workItem from="1588426263203" duration="651000" />
+      <workItem from="1588426263203" duration="1589000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18953000" />
+    <option name="totallyTimeSpent" value="19891000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2457356" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -456,7 +385,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
       <window_info anchor="bottom" id="Version Control" order="15" />
-      <window_info anchor="bottom" id="Run Dashboard" order="16" weight="0.5101822" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="16" visible="true" weight="0.50965667" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -546,16 +475,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/config/MSActuatorSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" selection-start-line="2" selection-end-line="24" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ms-admin-client/ms-admin-client.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -574,16 +493,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ms-admin/src/main/java/com/veryitman/admin/MZSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="36" column="56" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -611,10 +520,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ms-admin/src/main/java/com/veryitman/admin/MZWebSecurityConfig.java">
+    <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/config/MSActuatorSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="129" lean-forward="true" selection-start-line="15" selection-start-column="129" selection-end-line="15" selection-end-column="129" />
+        <state relative-caret-position="418">
+          <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ms-admin/src/main/java/com/veryitman/admin/config/MZWebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ms-admin/src/main/java/com/veryitman/admin/config/MZSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
