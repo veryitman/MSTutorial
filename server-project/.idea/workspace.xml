@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="c51a22ce-82ad-4d0b-b9d3-f0e747e8fc09" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-admin-client/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-admin-client/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-admin/src/main/java/com/veryitman/admin/config/MZSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-admin/src/main/java/com/veryitman/admin/config/MZSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-admin/src/main/java/com/veryitman/admin/config/MZWebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-admin/src/main/java/com/veryitman/admin/config/MZWebSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-admin/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-admin/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-user/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-user/src/main/resources/application-dev.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,15 +30,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ms-admin/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="66" selection-start-line="13" selection-start-column="66" selection-end-line="13" selection-end-column="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ms-admin-client/src/main/java/com/veryitman/adminclient/MZAdminClientApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="95">
@@ -55,20 +44,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ms-admin/src/main/java/com/veryitman/admin/config/MZSecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="26" column="75" lean-forward="true" selection-start-line="26" selection-start-column="75" selection-end-line="26" selection-end-column="75" />
+            <state relative-caret-position="513">
+              <caret line="39" column="57" lean-forward="true" selection-start-line="39" selection-start-column="57" selection-end-line="39" selection-end-column="57" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ms-admin/src/main/java/com/veryitman/admin/config/MZWebSecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="3" selection-end-line="19" />
-              <folding>
-                <element signature="e#0#907#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="304">
+              <caret line="16" column="95" selection-start-line="16" selection-start-column="95" selection-end-line="16" selection-end-column="95" />
             </state>
           </provider>
         </entry>
@@ -76,17 +65,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ms-user/src/main/resources/application-dev.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="44" column="39" lean-forward="true" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ms-admin/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="691">
-              <caret line="47" column="65" lean-forward="true" selection-start-line="47" selection-start-column="65" selection-end-line="47" selection-end-column="65" />
+            <state relative-caret-position="222">
+              <caret line="15" column="74" selection-start-line="15" selection-start-column="74" selection-end-line="15" selection-end-column="74" />
             </state>
           </provider>
         </entry>
@@ -94,8 +74,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ms-admin-client/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+            <state relative-caret-position="19">
+              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -124,6 +104,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>management.endpoints.web.exposure.include=*</find>
+      <find>http://localhost:8087</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -141,12 +122,12 @@
         <option value="$PROJECT_DIR$/ms-admin/pom.xml" />
         <option value="$PROJECT_DIR$/ms-admin/src/main/java/com/veryitman/admin/MZSecurityConfig.java" />
         <option value="$PROJECT_DIR$/ms-admin/src/main/java/com/veryitman/admin/MZWebSecurityConfig.java" />
-        <option value="$PROJECT_DIR$/ms-admin/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/ms-admin-client/src/main/java/com/veryitman/adminclient/MZAdminClientApplication.java" />
-        <option value="$PROJECT_DIR$/ms-admin-client/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/ms-admin/src/main/java/com/veryitman/admin/config/MZWebSecurityConfig.java" />
-        <option value="$PROJECT_DIR$/ms-admin/src/main/java/com/veryitman/admin/config/MZSecurityConfig.java" />
         <option value="$PROJECT_DIR$/ms-user/src/main/resources/application-dev.properties" />
+        <option value="$PROJECT_DIR$/ms-admin/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/ms-admin-client/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/ms-admin/src/main/java/com/veryitman/admin/config/MZSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/ms-admin/src/main/java/com/veryitman/admin/config/MZWebSecurityConfig.java" />
       </list>
     </option>
   </component>
@@ -245,23 +226,6 @@
               <item name="ms-admin-client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ms-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server-project" type="462c0819:PsiDirectoryNode" />
-              <item name="ms-admin-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="adminclient" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ms-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server-project" type="462c0819:PsiDirectoryNode" />
-              <item name="ms-admin-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -289,6 +253,35 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ms-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="ms-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework.security:spring-security-core:5.2.2.RELEASE" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="ms-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework.security:spring-security-core:5.2.2.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-security-core-5.2.2.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ms-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework.security:spring-security-core:5.2.2.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-security-core-5.2.2.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="userdetails" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ms-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework.security:spring-security-core:5.2.2.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-security-core-5.2.2.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="password" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -355,7 +348,7 @@
     </option>
     <option name="contentProportion" value="0.20183982" />
   </component>
-  <component name="RunManager" selected="Spring Boot.UserApplication">
+  <component name="RunManager" selected="Spring Boot.AdminClientApp">
     <configuration name="AdminClientApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ms-admin-client" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.veryitman.adminclient.MZAdminClientApplication" />
@@ -397,15 +390,16 @@
       <option name="presentableId" value="Default" />
       <updated>1588384505477</updated>
       <workItem from="1588384509857" duration="18302000" />
-      <workItem from="1588426263203" duration="3544000" />
+      <workItem from="1588426263203" duration="9969000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21846000" />
+    <option name="totallyTimeSpent" value="28271000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2457356" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -431,7 +425,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
       <window_info anchor="bottom" id="Version Control" order="15" />
-      <window_info anchor="bottom" id="Run Dashboard" order="16" visible="true" weight="0.5718884" />
+      <window_info anchor="bottom" id="Run Dashboard" order="16" weight="0.5214592" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -538,32 +532,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ms-admin/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="66" selection-start-line="13" selection-start-column="66" selection-end-line="13" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ms-admin-client/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ms-admin/src/main/java/com/veryitman/admin/config/MZWebSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="3" selection-end-line="19" />
-          <folding>
-            <element signature="e#0#907#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ms-admin/src/main/java/com/veryitman/admin/config/MZSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" column="75" lean-forward="true" selection-start-line="26" selection-start-column="75" selection-end-line="26" selection-end-column="75" />
+        <state relative-caret-position="76">
+          <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -577,17 +547,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ms-user/src/main/resources/application-dev.properties">
+    <entry file="file://$PROJECT_DIR$/ms-admin/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="44" column="39" lean-forward="true" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
+        <state relative-caret-position="102">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ms-admin/pom.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.2.2.RELEASE/spring-security-core-5.2.2.RELEASE.jar!/org/springframework/security/core/userdetails/User.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="691">
-          <caret line="47" column="65" lean-forward="true" selection-start-line="47" selection-start-column="65" selection-end-line="47" selection-end-column="65" />
+        <state relative-caret-position="306">
+          <caret line="155" column="46" lean-forward="true" selection-start-line="155" selection-start-column="46" selection-end-line="155" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ms-admin-client/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ms-admin/src/main/java/com/veryitman/admin/config/MZSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="39" column="57" lean-forward="true" selection-start-line="39" selection-start-column="57" selection-end-line="39" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.2.2.RELEASE/spring-security-core-5.2.2.RELEASE.jar!/org/springframework/security/crypto/password/PasswordEncoder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ms-user/src/main/resources/application-dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="15" column="74" selection-start-line="15" selection-start-column="74" selection-end-line="15" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ms-admin/src/main/java/com/veryitman/admin/config/MZWebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="95" selection-start-line="16" selection-start-column="95" selection-end-line="16" selection-end-column="95" />
         </state>
       </provider>
     </entry>
