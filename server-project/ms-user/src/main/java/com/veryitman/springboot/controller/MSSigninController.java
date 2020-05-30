@@ -3,20 +3,29 @@
  */
 package com.veryitman.springboot.controller;
 
+import com.alibaba.fastjson.JSON;
 import com.veryitman.springboot.model.MSResponse;
 import com.veryitman.springboot.model.MSResponseEnum;
 import com.veryitman.springboot.model.MSUser;
 import com.veryitman.springboot.service.MSUserService;
-import com.veryitman.springboot.util.MSUserUtil;
-import io.swagger.annotations.*;
+import com.veryitman.springboot.util.MSHTTPUtil;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
+import io.swagger.annotations.ApiOperation;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import com.alibaba.fastjson.*;
+import org.springframework.web.context.request.RequestAttributes;
+import org.springframework.web.context.request.RequestContextHolder;
+import org.springframework.web.context.request.ServletRequestAttributes;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 import java.util.Map;
 
 @Api(value = "signin", tags = "用户模块-登录")
+@Slf4j
 @RestController
 @RequestMapping(value = "signin") // 注意这里不要在signin前后加"/"
 public class MSSigninController {
@@ -27,9 +36,9 @@ public class MSSigninController {
     /**
      * User sigin with user's name and password.
      * <p>
-     * http://localhost:8080/signin/name?username=mark&userpwd=123
+     * http://localhost:8080/signin/name?username=myname&userpwd=123
      */
-    @CrossOrigin(origins = {"*", "http://localhost:8082"})
+    @CrossOrigin(origins = {"*", "http://localhost:63344"})
     @RequestMapping(value = "/name", method = RequestMethod.GET)
     @ApiOperation(value = "用户名登录", httpMethod = "GET", notes = "用户名登录")
     @ApiImplicitParams({
@@ -37,6 +46,13 @@ public class MSSigninController {
             @ApiImplicitParam(name = "userpwd", value = "密码", required = true)
     })
     public MSResponse sigin(@RequestParam(value = "username") String userName, @RequestParam(value = "userpwd") String userPwd) {
+        {
+            RequestAttributes requestAttributes = RequestContextHolder.getRequestAttributes();
+            ServletRequestAttributes servletRequestAttributes = (ServletRequestAttributes) requestAttributes;
+            HttpServletRequest httpServletRequest = servletRequestAttributes.getRequest();
+            String userIP = MSHTTPUtil.getIpAddr(httpServletRequest);
+            log.info("MSBlog, sigin user's ip: " + ((null == userIP) ? "unknown" : userIP));
+        }
         MSResponse response = new MSResponse();
         MSUser user = null;
         if (null == userName || null == userPwd || userName.length() <= 0 || userPwd.length() <= 0) {
