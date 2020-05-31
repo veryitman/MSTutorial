@@ -8,6 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 //@ServletComponentScan
 //@WebAppConfiguration
 // 去掉数据库依赖 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
+
 @SpringBootApplication
 public class MZUserApplication {
 
