@@ -1,0 +1,39 @@
+= MSBlog Server API
+
+
+[[_overview]]
+== Overview
+API for MSBlog
+
+
+=== Version information
+[%hardbreaks]
+__Version__ : 1.0.0
+
+
+=== Contact information
+[%hardbreaks]
+__Contact__ : itman
+__Contact Email__ : veryitman@126.com
+
+
+=== License information
+[%hardbreaks]
+__License__ : Apache 2.0
+__License URL__ : http://www.apache.org/licenses/LICENSE-2.0.html
+__Terms of service__ : null
+
+
+=== URI scheme
+[%hardbreaks]
+__Host__ : localhost:8080
+__BasePath__ : /
+
+
+=== Tags
+
+* ms-test-redirect-controller : MS Test Redirect Controller
+* 用户模块 : MS Signin Controller
+
+
+
