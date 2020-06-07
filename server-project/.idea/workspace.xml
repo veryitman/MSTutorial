@@ -2,29 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c51a22ce-82ad-4d0b-b9d3-f0e747e8fc09" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Android/project-code/MZSDK/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Android/project-code/MZSDK/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Android/project-code/MZSDK/consumer-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Android/project-code/MZSDK/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Android/project-code/MZSDK/src/androidTest/java/com/veryitman/sdk/ExampleInstrumentedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Android/project-code/MZSDK/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Android/project-code/MZSDK/src/test/java/com/veryitman/sdk/ExampleUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Android/project-code/app/src/main/java/com/veryitman/msblog/MZBaseActiviy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Android/project-code/app/src/main/java/com/veryitman/msblog/MZSigninActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Android/project-code/app/src/main/java/com/veryitman/msblog/MZSignupActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Android/project-code/app/src/main/java/com/veryitman/msblog/MZSplashActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Android/project-code/app/src/main/java/com/veryitman/msblog/model/MZBaseModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Android/project-code/app/src/main/java/com/veryitman/msblog/model/MZConstantsModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Android/project-code/app/src/main/java/com/veryitman/msblog/model/MZResponseModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Android/project-code/app/src/main/java/com/veryitman/msblog/model/MZUserModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Android/project-code/app/src/main/res/layout/activity_signin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Android/project-code/app/src/main/res/layout/activity_signup.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Android/project-code/app/src/main/res/layout/activity_splash.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Android/project-code/app/src/main/res/mipmap-hdpi/bg_pengyuyan.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Android/project-code/app/src/main/java/com/veryitman/msblog/model/MZBaseModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/project-code/app/src/main/java/com/veryitman/msblog/model/MZBaseModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-admin/src/main/java/com/veryitman/admin/config/MZSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-admin/src/main/java/com/veryitman/admin/config/MZSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/MZUserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/MZUserApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/config/MSActuatorSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/config/MSActuatorSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/controller/MSSigninController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/controller/MSSigninController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/model/MSResponseEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/model/MSResponseEnum.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -51,8 +33,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/controller/MSSigninController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="312">
+              <caret line="38" column="68" lean-forward="true" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="68" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -62,22 +44,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ms-admin/src/main/java/com/veryitman/admin/config/MZSecurityConfig.java">
+        <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/model/MSResponseEnum.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="28" column="71" lean-forward="true" selection-start-line="28" selection-start-column="71" selection-end-line="28" selection-end-column="71" />
+            <state relative-caret-position="95">
+              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#749#750#0" expanded="true" />
+                <element signature="e#776#777#0" expanded="true" />
+                <element signature="e#806#807#0" expanded="true" />
+                <element signature="e#832#833#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/config/MSActuatorSecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+            <state relative-caret-position="350">
+              <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,16 +74,7 @@
         <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/model/MSUser.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="437">
-              <caret line="25" column="27" lean-forward="true" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/model/MSResponse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -106,12 +82,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/MZUserApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
+            <state relative-caret-position="190">
               <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#532#533#0" expanded="true" />
-                <element signature="e#600#601#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -120,8 +94,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/controller/MSSignupController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="32" column="84" lean-forward="true" selection-start-line="32" selection-start-column="84" selection-end-line="32" selection-end-column="84" />
+            <state relative-caret-position="323">
+              <caret line="32" column="84" selection-start-line="32" selection-start-column="84" selection-end-line="32" selection-end-column="84" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -130,11 +104,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/config/MSCorsFilterConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="95">
+              <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -201,9 +175,10 @@
         <option value="$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/util/MSHTTPUtil.java" />
         <option value="$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/config/MSCorsFilterConfig.java" />
         <option value="$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/config/MSCorsConfig.java" />
-        <option value="$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/controller/MSSigninController.java" />
         <option value="$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/MZUserApplication.java" />
         <option value="$PROJECT_DIR$/ms-admin/src/main/java/com/veryitman/admin/config/MZSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/controller/MSSigninController.java" />
+        <option value="$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/model/MSResponseEnum.java" />
         <option value="$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/config/MSActuatorSecurityConfig.java" />
       </list>
     </option>
@@ -230,22 +205,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="ms-tutorial" type="58d84e3e:PackageViewProjectNode" />
-              <item name="ms-user" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="ms-tutorial" type="58d84e3e:PackageViewProjectNode" />
-              <item name="ms-user" type="616d4139:PackageViewModuleNode" />
-              <item name="com.veryitman.springboot" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -287,6 +246,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ms-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server-project" type="462c0819:PsiDirectoryNode" />
+              <item name="ms-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="MZSecurityConfig" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
               <item name="ms-tutorial" type="b2602c69:ProjectViewProjectNode" />
@@ -379,6 +348,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="MSSigninController" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="ms-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server-project" type="462c0819:PsiDirectoryNode" />
+              <item name="ms-user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
               <item name="MSSignupController" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
@@ -408,6 +387,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="MSResponseEnum" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="ms-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server-project" type="462c0819:PsiDirectoryNode" />
+              <item name="ms-user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
               <item name="MSUser" type="1a9f42e2:ClassTreeNode" />
             </path>
           </expand>
@@ -415,6 +404,22 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ms-tutorial" type="58d84e3e:PackageViewProjectNode" />
+              <item name="ms-user" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="ms-tutorial" type="58d84e3e:PackageViewProjectNode" />
+              <item name="ms-user" type="616d4139:PackageViewModuleNode" />
+              <item name="com.veryitman.springboot" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -508,16 +513,19 @@
       <workItem from="1589625134789" duration="1862000" />
       <workItem from="1589703810239" duration="11044000" />
       <workItem from="1590830336319" duration="9132000" />
+      <workItem from="1591453818489" duration="1595000" />
+      <workItem from="1591495022488" duration="1228000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52023000" />
+    <option name="totallyTimeSpent" value="55447000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.2153518" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.17217484" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -541,7 +549,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
       <window_info anchor="bottom" id="Version Control" order="15" />
-      <window_info anchor="bottom" id="Run Dashboard" order="16" weight="0.25965664" />
+      <window_info anchor="bottom" id="Run Dashboard" order="16" weight="0.4892704" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -732,6 +740,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ms-admin/src/main/java/com/veryitman/admin/config/MZSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/model/MSResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/model/MSUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/MZUserApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/controller/MSSignupController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="32" column="84" selection-start-line="32" selection-start-column="84" selection-end-line="32" selection-end-column="84" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/config/MSCorsFilterConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/util/MSHTTPUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -751,8 +814,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/controller/MSSigninController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="312">
+          <caret line="38" column="68" lean-forward="true" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="68" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
@@ -760,67 +823,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ms-admin/src/main/java/com/veryitman/admin/config/MZSecurityConfig.java">
+    <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/model/MSResponseEnum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="28" column="71" lean-forward="true" selection-start-line="28" selection-start-column="71" selection-end-line="28" selection-end-column="71" />
+        <state relative-caret-position="95">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#749#750#0" expanded="true" />
+            <element signature="e#776#777#0" expanded="true" />
+            <element signature="e#806#807#0" expanded="true" />
+            <element signature="e#832#833#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/config/MSActuatorSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/model/MSUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="25" column="27" lean-forward="true" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/model/MSResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/MZUserApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#532#533#0" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/controller/MSSignupController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="32" column="84" lean-forward="true" selection-start-line="32" selection-start-column="84" selection-end-line="32" selection-end-column="84" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/config/MSCorsFilterConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="350">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

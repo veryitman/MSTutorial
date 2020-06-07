@@ -3,24 +3,26 @@ package com.veryitman.springboot.model;
 public enum MSResponseEnum {
 
     /**
-     * Global code.
+     * Global error code and message.
      */
     SUCCESS(0, "Success."),
     UNKNOWN_ERROR(-1, "Unknown error."),
 
     /**
-     * Login error.
+     * Login error code and message.
      */
-    Login4SiginInvalidInfo(100001, "User's name or password is invalid."),
+    Login4SiginInvalidInfo(100001, "User\'s name or password is invalid."),
 
     LoginNoSuchUser(100002, "No such user."),
 
-    /**
-     * Signup error.
-     */
-    SignupInvalidInfo(110005, "User's name or password is invalid"),
+    LoginUserPwdError(100003, "User\'s password is error."),
 
-    SignupHasExistUser(110006, "User has existed and go to siguin");
+    /**
+     * Signup error code and message.
+     */
+    SignupInvalidInfo(110005, "User\'s name or password is invalid."),
+
+    SignupHasExistUser(110006, "User has existed and go to siguin.");
 
     private int code;
     private String msg;
