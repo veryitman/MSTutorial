@@ -1,6 +1,23 @@
 <resources>
     <string name="app_name">MSBlog</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+
+    <!--fragment title-->
+    <string name="fragment_title_home">Home</string>
+    <string name="fragment_title_category">Category</string>
+    <string name="fragment_title_friends">Friends</string>
+    <string name="fragment_title_profile">Profile</string>
+
+    <!--public-->
+    <string name="p_net_disconnected">Net disconnected</string>
+    <string name="p_net_timeout">Connect timeout</string>
+
+    <!--signup-->
+    <string name="signup_input_info_wrong">Check that your input</string>
+    <string name="signup_failed">Signup failed</string>
+    <string name="signup_pwd_not_match">Signup password is not match</string>
+    <string name="signup_success">Signup successfully</string>
+
+    <!--signin-->
+    <string name="signin_failed">Signin failed</string>
+    <string name="signin_success">Signin successfully</string>
 </resources>

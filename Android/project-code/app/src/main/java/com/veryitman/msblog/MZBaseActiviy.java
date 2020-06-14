@@ -2,6 +2,7 @@ package com.veryitman.msblog;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
@@ -20,8 +21,10 @@ public abstract class MZBaseActiviy extends Activity {
         return (isDestroyed() || isFinishing());
     }
 
+    /** ----------------------------------------Dialog------------------------------------------- */
+
     protected void showLoading() {
-        if (null == progressDialog && !progressDialog.isShowing()) {
+        if (null == progressDialog) {
             progressDialog = ProgressDialog.show(this, "", "Wait while loading...");
         }
     }
@@ -38,5 +41,11 @@ public abstract class MZBaseActiviy extends Activity {
         if (null != progressDialog && progressDialog.isShowing() && !isInvalideActivityContext()) {
             progressDialog.dismiss();
         }
+    }
+
+    protected void enterScene(Class activityClz) {
+        Intent intent = new Intent(this, activityClz);
+        this.startActivity(intent);
+        this.finish();
     }
 }

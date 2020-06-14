@@ -1,7 +1,5 @@
 package com.veryitman.msblog;
 
-import android.app.ProgressDialog;
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -27,8 +25,9 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 
-import static com.veryitman.msblog.model.MZBaseModel.MZBaseURL;
-import static com.veryitman.msblog.model.MZBaseModel.MZLogTag;
+import static com.veryitman.msblog.model.MZBaseModel.MZLogTag4Signin;
+import static com.veryitman.msblog.model.MZHttpUrlModel.MZUserNameSigninURL;
+import static com.veryitman.msblog.model.MZResponseModel.ResponseSuccessCode;
 
 /**
  * 登录.
@@ -37,8 +36,6 @@ public class MZSigninActivity extends MZBaseActiviy {
 
     private EditText userNameText;
     private EditText userPwdText;
-
-    private ProgressDialog progressDialog;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -66,50 +63,50 @@ public class MZSigninActivity extends MZBaseActiviy {
 
         OkHttpClient httpClient = new OkHttpClient();
         //MediaType JSON = MediaType.parse("application/json; charset=utf-8");
-        HttpUrl.Builder httpBuilder = HttpUrl.parse(MZBaseURL + "signin/name").newBuilder();
+        HttpUrl.Builder httpBuilder = HttpUrl.parse(MZUserNameSigninURL).newBuilder();
         HttpUrl httpUrl = httpBuilder.addQueryParameter("username", userName).addQueryParameter("userpwd", userPwd).build();
         Request request = new Request.Builder().url(httpUrl.url()).addHeader("content-type", "application/json").get().build();
         Call call = httpClient.newCall(request);
         call.enqueue(new Callback() {
             @Override
             public void onResponse(Call call, Response response) throws IOException {
-                Log.d(MZLogTag, "signin HTTP response: " + response.toString());
+                Log.d(MZLogTag4Signin, "signin HTTP response: " + response.toString());
                 try {
                     JSONObject jsonObject = new JSONObject(response.body().string());
                     Gson gson = new Gson();
                     MZResponseModel<MZUserModel> responseModel = gson.fromJson(jsonObject.toString(), MZResponseModel.class);
-                    if (null != responseModel && 0 == responseModel.code) {
+                    if (null != responseModel && ResponseSuccessCode == responseModel.code) {
                         //和下面代码同样效果
                         //JSONObject userModelJsonObj = new JSONObject(jsonObject.getString("results"));
                         JSONObject userModelJsonObj = new JSONObject((Map) responseModel.results);
                         MZUserModel userModel = new Gson().fromJson(userModelJsonObj.toString(), MZUserModel.class);
                         //Crash：com.google.gson.internal.LinkedTreeMap cannot be cast to *.MZUserModel
                         //userModel = responseModel.results;
-                        Log.d(MZLogTag, "signin HTTP response successful: " + userModel.toString());
+                        Log.d(MZLogTag4Signin, "signin HTTP response successful: " + userModel.toString());
                         runOnUiThread(() -> {
                             Toast.makeText(MZSigninActivity.this, "Sign in successfully", Toast.LENGTH_SHORT);
-                            MZSigninActivity.this.enterMainScene();
+                            MZSigninActivity.this.enterScene(MZMainActivity.class);
                         });
                     } else {
-                        Log.d(MZLogTag, "signin HTTP response error: " + (null != responseModel ? responseModel.msg : "Unknown error."));
+                        Log.d(MZLogTag4Signin, "signin HTTP response error: " + (null != responseModel ? responseModel.msg : "Unknown error."));
                         runOnUiThread(() -> {
-                            Toast.makeText(MZSigninActivity.this, "Sign in failed", Toast.LENGTH_SHORT);
+                            Toast.makeText(MZSigninActivity.this, R.string.signin_failed, Toast.LENGTH_SHORT);
                         });
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
-                    Log.d(MZLogTag, "signin HTTP response parse error: " + e.toString());
+                    Log.d(MZLogTag4Signin, "signin HTTP response parse error: " + e.toString());
                     runOnUiThread(() -> {
-                        Toast.makeText(MZSigninActivity.this, "Sign in failed", Toast.LENGTH_SHORT);
+                        Toast.makeText(MZSigninActivity.this, R.string.signin_failed, Toast.LENGTH_SHORT);
                     });
                 }
             }
 
             @Override
             public void onFailure(Call call, IOException e) {
-                Log.d(MZLogTag, "signin HTTP response onFailure: " + e.toString());
+                Log.d(MZLogTag4Signin, "signin HTTP response onFailure: " + e.toString());
                 runOnUiThread(() -> {
-                    Toast.makeText(MZSigninActivity.this, "Sign in failed", Toast.LENGTH_SHORT);
+                    Toast.makeText(MZSigninActivity.this, R.string.signin_failed, Toast.LENGTH_SHORT);
                 });
             }
         });
@@ -119,9 +116,5 @@ public class MZSigninActivity extends MZBaseActiviy {
      * ----------------------------------------Private-------------------------------------------------------
      */
 
-    private void enterMainScene() {
-        Intent intent = new Intent(this, MZMainActivity.class);
-        this.startActivity(intent);
-        this.finish();
-    }
+
 }

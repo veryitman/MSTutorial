@@ -94,7 +94,8 @@
         android:textAlignment="center"
         android:textColor="#ADFF0000"
         android:textSize="22sp"
-        android:text="Sign up"
+        android:text="Signup"
+        android:textAllCaps="false"
         app:layout_constraintTop_toBottomOf="@id/text_user_pwd_again"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -111,7 +112,25 @@
         android:textColor="#AD0048FF"
         android:textSize="22sp"
         android:text="Had Account"
+        android:textAllCaps="false"
         app:layout_constraintTop_toBottomOf="@id/btn_signup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_enter_guest"
+        android:onClick="onEnterUseGuestClick"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textColor="#AD1F2535"
+        android:textSize="22sp"
+        android:text="Guest"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/btn_goto_signin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
