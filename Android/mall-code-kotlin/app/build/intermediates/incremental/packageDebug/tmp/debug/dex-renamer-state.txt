@@ -1,4 +1,0 @@
-#Tue Jun 02 17:49:22 CST 2020
-base.0=E\:\\Github\\MSTutorial\\Android\\mall-code-kotlin\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
