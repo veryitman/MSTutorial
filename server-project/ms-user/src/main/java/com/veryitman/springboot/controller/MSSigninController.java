@@ -69,9 +69,14 @@ public class MSSigninController {
             } else {// 有这个用户
                 Map user_map = query_users.get(0);
                 String query_user_name = (String) user_map.get("accountName");
+                String query_user_pwd = (String) user_map.get("accountPwd");
                 // 没有对应的用户名
                 if (!query_user_name.equals(userName)) {
                     MSResponseEnum responseEnum = MSResponseEnum.LoginNoSuchUser;
+                    response.setCode(responseEnum.getCode());
+                    response.setMsg(responseEnum.getMsg());
+                } else if (!query_user_pwd.equals(userPwd)) {
+                    MSResponseEnum responseEnum = MSResponseEnum.LoginUserPwdError;
                     response.setCode(responseEnum.getCode());
                     response.setMsg(responseEnum.getMsg());
                 } else {// 查询到了该用户

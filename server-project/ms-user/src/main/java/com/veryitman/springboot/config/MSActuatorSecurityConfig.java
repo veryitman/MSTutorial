@@ -16,24 +16,29 @@ public class MSActuatorSecurityConfig extends WebSecurityConfigurerAdapter {
         //        .permitAll()
         //        .antMatchers("/")
         //        .permitAll()
+        //        /** 对应的API不需要认证 */
+        //        .antMatchers("/signin/name/**").permitAll()
+        //        .antMatchers("/signup/name/**").permitAll()
         //        .antMatchers("/**")
         //        .authenticated()
         //        .and()
         //        .httpBasic();
 
-        //disable CRSF
-        http
-                //no authentication needed for these context paths
-                .authorizeRequests()
-                .antMatchers("/error").permitAll()
-                .antMatchers("/error/**").permitAll()
-                .antMatchers("/your Urls that dosen't need security/**").permitAll();
+        http.csrf().disable();
+
+        /** disable CRSF */
+        //http
+        //        //no authentication needed for these context paths
+        //        .authorizeRequests()
+        //        .antMatchers("/error").permitAll()
+        //        .antMatchers("/error/**").permitAll()
+        //        .antMatchers("/signup/name/**").permitAll()
+        //        .antMatchers("/signin/name/**").permitAll();
     }
 
     @Override
     public void configure(WebSecurity webSecurity) throws Exception {
-        webSecurity
-                .ignoring()
+        webSecurity.ignoring()
                 // All of Spring Security will ignore the requests
                 .antMatchers("/error/**");
     }

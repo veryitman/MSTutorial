@@ -16,7 +16,7 @@ public class MZSplashActivity extends Activity {
 
         new Handler(getMainLooper()).postDelayed(() -> {
             MZSplashActivity.this.enterSignupScene();
-        }, 5000);
+        }, 3000);
     }
 
     private void enterSignupScene() {
