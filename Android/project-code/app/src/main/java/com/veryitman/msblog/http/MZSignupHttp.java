@@ -18,6 +18,7 @@ import okhttp3.Response;
 
 import static com.veryitman.msblog.model.MZBaseModel.MZLogTag4Signup;
 import static com.veryitman.msblog.model.MZHttpUrlModel.MZUserNameSignupURL;
+import static com.veryitman.msblog.model.MZResponseModel.ResponseFailureOfSignup;
 import static com.veryitman.msblog.model.MZResponseModel.ResponseSuccessCode;
 
 public class MZSignupHttp {
@@ -27,7 +28,7 @@ public class MZSignupHttp {
         params.put("username", userName);
         params.put("userpwd", userPwd);
 
-        Call call = MZOkHTTPWrapper.getInstance().postRequest(params, MZUserNameSignupURL, new MZOkHTTPWrapper.HttpCallback() {
+        Call call = MZOkHTTPWrapper.getInstance().postRequest(MZUserNameSignupURL, params, new MZOkHTTPWrapper.HttpCallback() {
             @Override
             public void onSucess(Object model) {
                 Response response = (Response) model;
@@ -53,13 +54,13 @@ public class MZSignupHttp {
                         e.printStackTrace();
                         Log.e(MZLogTag4Signup, "Signup exception: " + e.toString());
                         if (null != callback) {
-                            callback.onFailure(-1, "Signup failed that parse data exception");//应放到主线程
+                            callback.onFailure(ResponseFailureOfSignup, "Signup failed that parse data exception");//应放到主线程
                         }
                     }
                 } else {
                     if (null != callback) {
                         Log.e(MZLogTag4Signup, "Signup fail: " + response.message());
-                        callback.onFailure(-1, response.message());//应放到主线程
+                        callback.onFailure(ResponseFailureOfSignup, response.message());//应放到主线程
                     }
                 }
             }
@@ -69,7 +70,7 @@ public class MZSignupHttp {
                 //请求失败的处理
                 Log.e(MZLogTag4Signup, "Signup Failed. code: " + code + ", msg: " + msg);
                 if (null != callback) {
-                    callback.onFailure(-2, "Signup failed");//应放到主线程
+                    callback.onFailure(ResponseFailureOfSignup, "Signup failed");//应放到主线程
                 }
             }
         });

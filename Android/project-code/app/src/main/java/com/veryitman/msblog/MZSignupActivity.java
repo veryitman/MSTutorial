@@ -1,6 +1,5 @@
 package com.veryitman.msblog;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -9,33 +8,12 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
-import com.google.gson.Gson;
 import com.veryitman.msblog.http.MZOkHTTPWrapper;
 import com.veryitman.msblog.http.MZSignupHttp;
 import com.veryitman.msblog.model.MZResponseModel;
 import com.veryitman.msblog.model.MZUserModel;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.concurrent.TimeUnit;
-
-import okhttp3.Call;
-import okhttp3.Callback;
-import okhttp3.FormBody;
-import okhttp3.MediaType;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.RequestBody;
-import okhttp3.Response;
-
 import static com.veryitman.msblog.model.MZBaseModel.MZLogTag4Signup;
-import static com.veryitman.msblog.model.MZConstantsModel.HTTPTimeout;
-import static com.veryitman.msblog.model.MZHttpUrlModel.MZUserNameSignupURL;
-import static com.veryitman.msblog.model.MZResponseModel.ResponseSuccessCode;
 
 /**
  * 注册.
@@ -74,7 +52,6 @@ public class MZSignupActivity extends MZBaseActiviy {
         MZSignupHttp.signupByUserNameRequest(userName, userPwd, new MZOkHTTPWrapper.HttpCallback() {
             @Override
             public void onSucess(Object model) {
-                MZResponseModel<MZUserModel> responseModel = (MZResponseModel<MZUserModel>) model;
                 MZUserModel userModel = (MZUserModel) model;
                 runOnUiThread(() -> {
                     Log.d(MZLogTag4Signup, "Signup success info: " + userModel.toString());
