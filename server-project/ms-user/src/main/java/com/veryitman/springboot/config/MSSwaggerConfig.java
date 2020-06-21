@@ -16,7 +16,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 public class MSSwaggerConfig {
 
-    @Value("${swagger.enable}")
+    @Value("${ms.swagger.enable}")
     private boolean enableSwagger;
 
     @Bean
