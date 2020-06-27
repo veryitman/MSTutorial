@@ -27,7 +27,7 @@ public class MSDBTests {
     @Autowired
     MSUserService msUserService;
 
-    private Logger logger = LoggerFactory.getLogger(SpringbootApplicationTests.class);
+    private Logger logger = LoggerFactory.getLogger(MSDBTests.class);
 
     @Before
     public void setup() {

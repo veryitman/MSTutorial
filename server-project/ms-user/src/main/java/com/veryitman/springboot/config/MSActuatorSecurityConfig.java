@@ -11,7 +11,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 @Configuration
 public class MSActuatorSecurityConfig extends WebSecurityConfigurerAdapter {
 
-    @Value("${ms.security.csrf.enable}")
+    @Value("${msconfig.security.csrf.enable}")
     private boolean enableCRSF;
 
     @Override
