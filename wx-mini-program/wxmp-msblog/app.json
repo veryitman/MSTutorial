@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/Category",
+    "pages/category/category",
+    "pages/profile/profile",
+    "pages/friends/friends"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#997872",
+    "selectedColor": "#878956",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "Home",
+      "iconPath": "images/icon_tabbar/home.png",
+      "selectedIconPath": "images/icon_tabbar/home_selected.png"
+    }, {
+      "pagePath": "pages/category/category",
+      "text": "Category",
+      "iconPath": "images/icon_tabbar/category.png",
+      "selectedIconPath": "images/icon_tabbar/category_selected.png"
+    }, {
+      "pagePath": "pages/friends/friends",
+      "text": "Friends",
+      "iconPath": "images/icon_tabbar/friends.png",
+      "selectedIconPath": "images/icon_tabbar/friends_selected.png"
+    }, {
+      "pagePath": "pages/profile/profile",
+      "text": "Profile",
+      "iconPath": "images/icon_tabbar/profile.png",
+      "selectedIconPath": "images/icon_tabbar/profile_selected.png"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+
+  
+}
