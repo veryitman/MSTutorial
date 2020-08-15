@@ -3,8 +3,8 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ms-admin" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/ms-admin" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ms-admin-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ms-blog-category" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ms-user" charset="UTF-8" />
   </component>
 </project>

@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ms-admin/ms-admin.iml" filepath="$PROJECT_DIR$/ms-admin/ms-admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/ms-admin-client/ms-admin-client.iml" filepath="$PROJECT_DIR$/ms-admin-client/ms-admin-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ms-blog-category/ms-blog-category.iml" filepath="$PROJECT_DIR$/ms-blog-category/ms-blog-category.iml" />
       <module fileurl="file://$PROJECT_DIR$/ms-user/ms-user.iml" filepath="$PROJECT_DIR$/ms-user/ms-user.iml" />
       <module fileurl="file://$PROJECT_DIR$/server-project.iml" filepath="$PROJECT_DIR$/server-project.iml" />
     </modules>

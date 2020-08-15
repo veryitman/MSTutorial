@@ -6,6 +6,7 @@
         <option value="$PROJECT_DIR$/ms-user/pom.xml" />
         <option value="$PROJECT_DIR$/ms-admin/pom.xml" />
         <option value="$PROJECT_DIR$/ms-admin-client/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-blog-category/pom.xml" />
       </list>
     </option>
   </component>

@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ms-admin-client" />
         <module name="ms-admin" />
+        <module name="ms-blog-category" />
         <module name="ms-user" />
         <module name="server-project" />
       </profile>
@@ -16,6 +17,7 @@
     <bytecodeTargetLevel>
       <module name="ms-admin" target="1.8" />
       <module name="ms-admin-client" target="1.8" />
+      <module name="ms-blog-category" target="1.8" />
       <module name="ms-user" target="1.8" />
       <module name="server-project" target="1.8" />
     </bytecodeTargetLevel>
@@ -24,6 +26,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ms-admin" options="-parameters" />
       <module name="ms-admin-client" options="-parameters" />
+      <module name="ms-blog-category" options="-parameters" />
       <module name="ms-user" options="-parameters" />
       <module name="server-project" options="-parameters" />
     </option>
