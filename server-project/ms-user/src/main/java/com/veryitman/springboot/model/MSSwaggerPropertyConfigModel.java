@@ -8,11 +8,9 @@ import org.springframework.stereotype.Component;
 @Setter
 @Getter
 @Component
-@ConfigurationProperties(prefix = "msconfig")
-public class MSPropertyConfigModel {
+@ConfigurationProperties(prefix = "msconfig.swagger")
+public class MSSwaggerPropertyConfigModel {
 
     private boolean enableSwagger;
-
-    private boolean enableSecurityCSRF;
 
 }
