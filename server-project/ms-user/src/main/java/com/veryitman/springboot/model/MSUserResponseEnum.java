@@ -1,6 +1,6 @@
 package com.veryitman.springboot.model;
 
-public enum MSResponseEnum {
+public enum MSUserResponseEnum {
 
     /**
      * Global error code and message.
@@ -27,7 +27,7 @@ public enum MSResponseEnum {
     private int code;
     private String msg;
 
-    MSResponseEnum(int code, String msg) {
+    MSUserResponseEnum(int code, String msg) {
         this.code = code;
         this.msg = msg;
     }

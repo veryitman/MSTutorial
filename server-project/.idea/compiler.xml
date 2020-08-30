@@ -7,18 +7,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ms-admin-client" />
-        <module name="ms-admin" />
         <module name="ms-blog-category" />
-        <module name="ms-user" />
+        <module name="ms-blog-home" />
         <module name="server-project" />
+        <module name="ms-user" />
+        <module name="ms-admin" />
+        <module name="ms-blog-profile" />
+        <module name="ms-admin-client" />
+        <module name="mz-core" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ms-admin" target="1.8" />
       <module name="ms-admin-client" target="1.8" />
       <module name="ms-blog-category" target="1.8" />
+      <module name="ms-blog-home" target="1.8" />
+      <module name="ms-blog-profile" target="1.8" />
       <module name="ms-user" target="1.8" />
+      <module name="mz-core" target="1.8" />
       <module name="server-project" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -27,7 +33,10 @@
       <module name="ms-admin" options="-parameters" />
       <module name="ms-admin-client" options="-parameters" />
       <module name="ms-blog-category" options="-parameters" />
+      <module name="ms-blog-home" options="-parameters" />
+      <module name="ms-blog-profile" options="-parameters" />
       <module name="ms-user" options="-parameters" />
+      <module name="mz-core" options="-parameters" />
       <module name="server-project" options="-parameters" />
     </option>
   </component>

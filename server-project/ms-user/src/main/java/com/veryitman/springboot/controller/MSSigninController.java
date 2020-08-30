@@ -5,7 +5,7 @@ package com.veryitman.springboot.controller;
 
 import com.alibaba.fastjson.JSON;
 import com.veryitman.springboot.model.MSResponse;
-import com.veryitman.springboot.model.MSResponseEnum;
+import com.veryitman.springboot.model.MSUserResponseEnum;
 import com.veryitman.springboot.model.MSUser;
 import com.veryitman.springboot.service.MSUserService;
 import com.veryitman.springboot.util.MSHTTPUtil;
@@ -46,6 +46,7 @@ public class MSSigninController {
             @ApiImplicitParam(name = "userpwd", value = "密码", required = true)
     })
     public MSResponse sigin(@RequestParam(value = "username") String userName, @RequestParam(value = "userpwd") String userPwd) {
+        // 解析用户 IP
         {
             RequestAttributes requestAttributes = RequestContextHolder.getRequestAttributes();
             ServletRequestAttributes servletRequestAttributes = (ServletRequestAttributes) requestAttributes;
@@ -53,17 +54,18 @@ public class MSSigninController {
             String userIP = MSHTTPUtil.getIpAddr(httpServletRequest);
             log.info("MSBlog, sigin user's ip: " + ((null == userIP) ? "unknown" : userIP));
         }
+
         MSResponse response = new MSResponse();
         MSUser user = null;
         if (null == userName || null == userPwd || userName.length() <= 0 || userPwd.length() <= 0) {
-            MSResponseEnum responseEnum = MSResponseEnum.Login4SiginInvalidInfo;
+            MSUserResponseEnum responseEnum = MSUserResponseEnum.Login4SiginInvalidInfo;
             response.setCode(responseEnum.getCode());
             response.setMsg(responseEnum.getMsg());
         } else {
             // 检查用户数据库的‘user’表中是否有该用户？
             List<Map> query_users = userService.queryUserByUserName(userName);
             if (query_users.isEmpty()) {// 没有该用户
-                MSResponseEnum responseEnum = MSResponseEnum.LoginNoSuchUser;
+                MSUserResponseEnum responseEnum = MSUserResponseEnum.LoginNoSuchUser;
                 response.setCode(responseEnum.getCode());
                 response.setMsg(responseEnum.getMsg());
             } else {// 有这个用户
@@ -72,17 +74,17 @@ public class MSSigninController {
                 String query_user_pwd = (String) user_map.get("accountPwd");
                 // 没有对应的用户名
                 if (!query_user_name.equals(userName)) {
-                    MSResponseEnum responseEnum = MSResponseEnum.LoginNoSuchUser;
+                    MSUserResponseEnum responseEnum = MSUserResponseEnum.LoginNoSuchUser;
                     response.setCode(responseEnum.getCode());
                     response.setMsg(responseEnum.getMsg());
                 } else if (!query_user_pwd.equals(userPwd)) {
-                    MSResponseEnum responseEnum = MSResponseEnum.LoginUserPwdError;
+                    MSUserResponseEnum responseEnum = MSUserResponseEnum.LoginUserPwdError;
                     response.setCode(responseEnum.getCode());
                     response.setMsg(responseEnum.getMsg());
                 } else {// 查询到了该用户
                     // 将查询出来的map对象使用FastJson转换为MSUser对象
                     user = JSON.parseObject(JSON.toJSONString(user_map), MSUser.class);
-                    MSResponseEnum rspEnum = MSResponseEnum.SUCCESS;
+                    MSUserResponseEnum rspEnum = MSUserResponseEnum.SUCCESS;
                     response.setCode(rspEnum.getCode());
                     response.setMsg(rspEnum.getMsg());
                 }
