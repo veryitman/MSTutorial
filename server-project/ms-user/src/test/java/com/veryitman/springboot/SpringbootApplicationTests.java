@@ -16,8 +16,11 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.file.Paths;
+
+// http://localhost:8080/swagger-ui.html
 
 @RunWith(SpringRunner.class)
 @AutoConfigureMockMvc
@@ -93,4 +96,27 @@ public class SpringbootApplicationTests {
                 //指定生成目录下生成指定文件
                 .toFile(Paths.get(markdownFileName));
     }
+
+    @Test
+    public void xx() {
+        String str = "https://www.dogedoge.com/results?q=windows+%E5%A6%82%E4%BD%95%E6%89%93%E5%BC%80adoc%E6%96%87%E4%BB%B6";
+        String out = getLastString(str);
+        System.out.println("out content: " + out);
+    }
+
+    public static String getLastString(String str) {
+        URL url;
+        try {
+            url = new URL(str);
+        } catch (MalformedURLException e) {
+            return null;
+        }
+
+        String file = url.getFile();
+        String[] splitStr = file.split("/");
+        int len = splitStr.length;
+        String result = splitStr[len-1];
+        return result;
+    }
+
 }

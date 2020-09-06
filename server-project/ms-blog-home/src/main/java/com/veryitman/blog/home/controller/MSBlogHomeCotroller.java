@@ -2,7 +2,7 @@ package com.veryitman.blog.home.controller;
 
 import com.veryitman.blog.home.model.MSBlogHomeArticle;
 import com.veryitman.blog.home.model.MSBlogHomeBanner;
-import com.veryitman.springboot.model.MSResponse;
+import com.veryitman.core.model.MSResponse;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

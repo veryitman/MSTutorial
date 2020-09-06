@@ -3,9 +3,9 @@
  */
 package com.veryitman.springboot.controller;
 
-import com.veryitman.springboot.model.MSResponse;
-import com.veryitman.springboot.model.MSUserResponseEnum;
+import com.veryitman.core.model.MSResponse;
 import com.veryitman.springboot.model.MSUser;
+import com.veryitman.springboot.model.MSUserResponseEnum;
 import com.veryitman.springboot.service.MSUserService;
 import com.veryitman.springboot.util.MSUserUtil;
 import io.swagger.annotations.Api;

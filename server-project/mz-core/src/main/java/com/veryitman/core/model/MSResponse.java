@@ -1,4 +1,4 @@
-package com.veryitman.springboot.model;
+package com.veryitman.core.model;
 
 import lombok.Data;
 

@@ -2,21 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c51a22ce-82ad-4d0b-b9d3-f0e747e8fc09" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ms-blog-home/src/main/java/com/veryitman/blog/home/controller/MSBlogHomeCotroller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-blog-home/src/main/java/com/veryitman/blog/home/model/MSBlogHomeArticle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-blog-home/src/main/java/com/veryitman/blog/home/model/MSBlogHomeBanner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-admin-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-admin-client/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-admin/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-user/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-blog-home/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-blog-home/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-blog-home/src/main/java/com/veryitman/blog/home/controller/MSBlogHomeCotroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-blog-home/src/main/java/com/veryitman/blog/home/controller/MSBlogHomeCotroller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/controller/MSSigninController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/controller/MSSigninController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/controller/MSSignupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/controller/MSSignupController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/model/MSResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/model/MSResponseEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/model/MSUserResponseEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-user/src/test/java/com/veryitman/springboot/SpringbootApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-user/src/test/java/com/veryitman/springboot/SpringbootApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mz-core/src/main/java/com/veryitman/core/model/MSResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/mz-core/src/main/java/com/veryitman/core/model/MSResponse.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -47,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/controller/MSSigninController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="711">
-              <caret line="86" column="55" selection-start-line="86" selection-start-column="55" selection-end-line="86" selection-end-column="55" />
+            <state relative-caret-position="893">
+              <caret line="47" column="21" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="21" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -60,8 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/controller/MSSignupController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="51" column="43" selection-start-line="51" selection-start-column="43" selection-end-line="51" selection-end-column="43" />
+            <state relative-caret-position="236">
+              <caret line="35" column="21" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="21" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -71,40 +63,79 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/model/MSUserResponseEnum.java">
+        <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/controller/test/MSTestController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+            <state relative-caret-position="361">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/service/MSUserService.java">
+        <entry file="file://$PROJECT_DIR$/ms-user/src/test/java/com/veryitman/springboot/SpringbootApplicationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="114">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ms-blog-home/src/main/java/com/veryitman/blog/home/model/MSBlogHomeArticle.java">
+        <entry file="file://$PROJECT_DIR$/mz-core/src/main/java/com/veryitman/core/model/MSResponse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="114">
+              <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ms-blog-category/src/main/java/com/veryitman/blog/category/controller/MZCategoryController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#341#342#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ms-blog-home/src/main/java/com/veryitman/blog/home/controller/MSBlogHomeCotroller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="179">
+              <caret line="15" column="47" lean-forward="true" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ms-blog-home/src/main/java/com/veryitman/blog/home/controller/MSBlogHomeCotroller.java">
+        <entry file="file://$PROJECT_DIR$/ms-blog-home/src/main/java/com/veryitman/blog/home/MSBlogHomeApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="38" column="46" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
+            <state relative-caret-position="171">
+              <caret line="9" column="65" lean-forward="true" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#259#260#0" expanded="true" />
+                <element signature="e#331#332#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ms-user/src/main/resources/application-dev.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="564">
+              <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -171,11 +202,13 @@
         <option value="$PROJECT_DIR$/ms-blog-profile/pom.xml" />
         <option value="$PROJECT_DIR$/ms-admin/pom.xml" />
         <option value="$PROJECT_DIR$/ms-admin-client/pom.xml" />
-        <option value="$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/controller/MSSignupController.java" />
         <option value="$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/model/MSResponseEnum.java" />
-        <option value="$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/controller/MSSigninController.java" />
         <option value="$PROJECT_DIR$/mz-core/src/main/java/com/veryitman/core/model/MSResponseEnum.java" />
         <option value="$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/model/MSUserResponseEnum.java" />
+        <option value="$PROJECT_DIR$/ms-user/src/test/java/com/veryitman/springboot/SpringbootApplicationTests.java" />
+        <option value="$PROJECT_DIR$/mz-core/src/main/java/com/veryitman/core/model/MSResponse.java" />
+        <option value="$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/controller/MSSigninController.java" />
+        <option value="$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/controller/MSSignupController.java" />
         <option value="$PROJECT_DIR$/ms-blog-home/src/main/java/com/veryitman/blog/home/controller/MSBlogHomeCotroller.java" />
       </list>
     </option>
@@ -204,6 +237,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ms-tutorial" type="58d84e3e:PackageViewProjectNode" />
+              <item name="ms-user" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="ms-tutorial" type="58d84e3e:PackageViewProjectNode" />
+              <item name="ms-user" type="616d4139:PackageViewModuleNode" />
+              <item name="com.veryitman.springboot" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -214,12 +263,37 @@
             <path>
               <item name="ms-tutorial" type="b2602c69:ProjectViewProjectNode" />
               <item name="server-project" type="462c0819:PsiDirectoryNode" />
-              <item name="ms-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="ms-blog-category" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ms-tutorial" type="b2602c69:ProjectViewProjectNode" />
               <item name="server-project" type="462c0819:PsiDirectoryNode" />
-              <item name="ms-admin-client" type="462c0819:PsiDirectoryNode" />
+              <item name="ms-blog-category" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ms-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server-project" type="462c0819:PsiDirectoryNode" />
+              <item name="ms-blog-category" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ms-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server-project" type="462c0819:PsiDirectoryNode" />
+              <item name="ms-blog-category" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ms-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server-project" type="462c0819:PsiDirectoryNode" />
+              <item name="ms-blog-category" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ms-tutorial" type="b2602c69:ProjectViewProjectNode" />
@@ -246,6 +320,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ms-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server-project" type="462c0819:PsiDirectoryNode" />
+              <item name="ms-blog-home" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ms-tutorial" type="b2602c69:ProjectViewProjectNode" />
@@ -305,9 +388,7 @@
               <item name="server-project" type="462c0819:PsiDirectoryNode" />
               <item name="ms-user" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ms-tutorial" type="b2602c69:ProjectViewProjectNode" />
@@ -357,22 +438,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="ms-tutorial" type="58d84e3e:PackageViewProjectNode" />
-              <item name="ms-user" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="ms-tutorial" type="58d84e3e:PackageViewProjectNode" />
-              <item name="ms-user" type="616d4139:PackageViewModuleNode" />
-              <item name="com.veryitman.springboot" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope" />
     </panes>
   </component>
@@ -390,7 +455,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -419,7 +484,39 @@
     </option>
     <option name="contentProportion" value="0.20183982" />
   </component>
-  <component name="RunManager" selected="Spring Boot.BlogHomeApplication">
+  <component name="RunManager" selected="Spring Boot.BlogUserApplication">
+    <configuration name="SpringbootApplicationTests.generateDocsFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ms-user" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.veryitman.springboot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.veryitman.springboot" />
+      <option name="MAIN_CLASS_NAME" value="com.veryitman.springboot.SpringbootApplicationTests" />
+      <option name="METHOD_NAME" value="generateDocsFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootApplicationTests.xx" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ms-user" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.veryitman.springboot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.veryitman.springboot" />
+      <option name="MAIN_CLASS_NAME" value="com.veryitman.springboot.SpringbootApplicationTests" />
+      <option name="METHOD_NAME" value="xx" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AdminClientApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ms-admin-client" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.veryitman.adminclient.MZAdminClientApplication" />
@@ -466,14 +563,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MzCoreApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="mz-core" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.veryitman.core.MzCoreApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="BlogUserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ms-user" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.veryitman.springboot.MZUserApplication" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -481,17 +571,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MzCoreApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="mz-core" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.veryitman.core.MzCoreApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Spring Boot.UserApplication" />
+      <item itemvalue="Spring Boot.BlogUserApplication" />
       <item itemvalue="Spring Boot.AdminClientApp" />
       <item itemvalue="Spring Boot.AdminServerApp" />
       <item itemvalue="Spring Boot.BlogProfileApplication" />
-      <item itemvalue="Spring Boot.BlogCategoryApplication" />
       <item itemvalue="Spring Boot.BlogHomeApplication" />
       <item itemvalue="Spring Boot.MzCoreApplication" />
+      <item itemvalue="Spring Boot.BlogCategoryApplication" />
+      <item itemvalue="JUnit.SpringbootApplicationTests.generateDocsFile" />
+      <item itemvalue="JUnit.SpringbootApplicationTests.xx" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SpringbootApplicationTests.xx" />
+        <item itemvalue="JUnit.SpringbootApplicationTests.generateDocsFile" />
         <item itemvalue="Spring Boot.BlogCategoryApplication" />
       </list>
     </recent_temporary>
@@ -527,23 +628,12 @@
       <workItem from="1597480235810" duration="1429000" />
       <workItem from="1597761762080" duration="543000" />
       <workItem from="1598065665197" duration="1085000" />
-      <workItem from="1598773230609" duration="6017000" />
+      <workItem from="1598773230609" duration="6128000" />
+      <workItem from="1599289720603" duration="3413000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MSPropertyConfigTests_primitiveDataConfig - 2020.06.21 at 17h 40m 10s.xml">
-      <configuration name="MSPropertyConfigTests.primitiveDataConfig" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MSPropertyConfigTests_primitiveDataConfig - 2020.06.21 at 17h 40m 53s.xml">
-      <configuration name="MSPropertyConfigTests.primitiveDataConfig" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MSPropertyConfigTests_primitiveDataConfig - 2020.06.21 at 17h 41m 20s.xml">
-      <configuration name="MSPropertyConfigTests.primitiveDataConfig" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MSPropertyConfigTests_primitiveDataConfig - 2020.06.21 at 17h 42m 33s.xml">
-      <configuration name="MSPropertyConfigTests.primitiveDataConfig" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MSPropertyConfigTests_primitiveDataConfig - 2020.06.21 at 17h 43m 12s.xml">
       <configuration name="MSPropertyConfigTests.primitiveDataConfig" configurationId="JUnit" />
     </history-entry>
@@ -556,15 +646,33 @@
     <history-entry file="MSPropertyConfigTests_primitiveDataConfig - 2020.06.21 at 17h 45m 40s.xml">
       <configuration name="MSPropertyConfigTests.primitiveDataConfig" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SpringbootApplicationTests_generateDocsFile - 2020.09.05 at 15h 16m 44s.xml">
+      <configuration name="SpringbootApplicationTests.generateDocsFile" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringbootApplicationTests_generateDocsFile - 2020.09.05 at 15h 23m 00s.xml">
+      <configuration name="SpringbootApplicationTests.generateDocsFile" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringbootApplicationTests_generateDocsFile - 2020.09.05 at 15h 29m 33s.xml">
+      <configuration name="SpringbootApplicationTests.generateDocsFile" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringbootApplicationTests_xx - 2020.09.05 at 15h 57m 17s.xml">
+      <configuration name="SpringbootApplicationTests.xx" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringbootApplicationTests_xx - 2020.09.05 at 15h 58m 09s.xml">
+      <configuration name="SpringbootApplicationTests.xx" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringbootApplicationTests_xx - 2020.09.05 at 15h 59m 18s.xml">
+      <configuration name="SpringbootApplicationTests.xx" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79834000" />
+    <option name="totallyTimeSpent" value="83358000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.23560767" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.23827292" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -574,7 +682,7 @@
       <window_info id="Web" order="7" sideWeight="0.5021097" side_tool="true" weight="0.21321961" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.61182797" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4860515" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -588,7 +696,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
       <window_info anchor="bottom" id="Version Control" order="15" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="16" visible="true" weight="0.46995708" />
+      <window_info anchor="bottom" id="Run Dashboard" order="16" weight="0.46995708" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -643,37 +751,21 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/ms-user/src/test/java/com/veryitman/springboot/SpringbootApplicationTests.java</url>
+          <line>100</line>
+          <properties class="com.veryitman.springboot.SpringbootApplicationTests" method="xx">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.5.RELEASE/spring-web-5.2.5.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java" />
-    <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/model/MSUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/util/MSHTTPUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="31" column="54" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-security/2.2.6.RELEASE/spring-boot-starter-security-2.2.6.RELEASE.jar!/META-INF/MANIFEST.MF" />
-    <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/config/MSCorsFilterConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.5.RELEASE/spring-webmvc-5.2.5.RELEASE-sources.jar!/org/springframework/web/servlet/config/annotation/CorsRegistration.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.5.RELEASE/spring-webmvc-5.2.5.RELEASE-sources.jar!/org/springframework/web/servlet/config/annotation/CorsRegistry.java" />
     <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/config/MSCorsConfig.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -714,16 +806,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ms-user/src/test/java/com/veryitman/springboot/SpringbootApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1330">
-          <caret line="70" column="66" lean-forward="true" selection-start-line="70" selection-start-column="66" selection-end-line="70" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30-sources.jar!/org/slf4j/Logger.java" />
     <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/model/MSPropertyConfigModel.java" />
     <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/config/MSActuatorSecurityConfig.java">
@@ -760,13 +842,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ms-user/src/main/resources/application-dev.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="51" column="16" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -857,18 +932,6 @@
     <entry file="file://$PROJECT_DIR$/ms-blog-category/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ms-blog-category/src/main/java/com/veryitman/blog/category/controller/MZCategoryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#295#296#0" expanded="true" />
-            <element signature="e#341#342#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/service/MSUserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1417">
@@ -891,18 +954,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ms-blog-home/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ms-blog-home/src/main/java/com/veryitman/blog/home/MSBlogHomeApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="65" lean-forward="true" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#259#260#0" expanded="true" />
-            <element signature="e#331#332#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ms-user/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -946,51 +997,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/model/MSResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/controller/MSSigninController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="711">
-          <caret line="86" column="55" selection-start-line="86" selection-start-column="55" selection-end-line="86" selection-end-column="55" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mz-core/src/main/java/com/veryitman/core/model/MSResponseEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-          <folding>
-            <element signature="e#803#804#0" expanded="true" />
-            <element signature="e#830#831#0" expanded="true" />
-            <element signature="e#886#887#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/model/MSResponse.java" />
+    <entry file="file://$PROJECT_DIR$/mz-core/src/main/java/com/veryitman/core/model/MSResponseEnum.java" />
     <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/model/MSUserResponseEnum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/controller/MSSignupController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="51" column="43" selection-start-line="51" selection-start-column="43" selection-end-line="51" selection-end-column="43" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -1008,12 +1020,112 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ms-blog-home/src/main/java/com/veryitman/blog/home/controller/MSBlogHomeCotroller.java">
+    <entry file="file://$PROJECT_DIR$/ms-user/src/main/resources/application-dev.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="38" column="46" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
+        <state relative-caret-position="564">
+          <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/controller/test/MSTestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ms-user/src/docs/markdown/generated/security.adoc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ms-user/src/docs/markdown/generated/paths.adoc">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ms-user/src/docs/markdown/generated/overview.adoc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ms-user/src/docs/markdown/generated/definitions.adoc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ms-user/src/test/java/com/veryitman/springboot/SpringbootApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mz-core/src/main/java/com/veryitman/core/model/MSResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ms-blog-category/src/main/java/com/veryitman/blog/category/controller/MZCategoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#341#342#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/controller/MSSigninController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="893">
+          <caret line="47" column="21" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="21" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ms-user/src/main/java/com/veryitman/springboot/controller/MSSignupController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="35" column="21" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="21" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ms-blog-home/src/main/java/com/veryitman/blog/home/controller/MSBlogHomeCotroller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="15" column="47" lean-forward="true" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ms-blog-home/src/main/java/com/veryitman/blog/home/MSBlogHomeApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="65" lean-forward="true" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#259#260#0" expanded="true" />
+            <element signature="e#331#332#0" expanded="true" />
           </folding>
         </state>
       </provider>
