@@ -7,6 +7,9 @@
         <option value="$PROJECT_DIR$/ms-admin/pom.xml" />
         <option value="$PROJECT_DIR$/ms-admin-client/pom.xml" />
         <option value="$PROJECT_DIR$/ms-blog-category/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-blog-profile/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-blog-home/pom.xml" />
+        <option value="$PROJECT_DIR$/mz-core/pom.xml" />
       </list>
     </option>
   </component>

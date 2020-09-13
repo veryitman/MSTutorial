@@ -3,9 +3,9 @@
  */
 package com.veryitman.springboot.controller;
 
-import com.veryitman.springboot.model.MSResponse;
-import com.veryitman.springboot.model.MSResponseEnum;
+import com.veryitman.core.model.MSResponse;
 import com.veryitman.springboot.model.MSUser;
+import com.veryitman.springboot.model.MSUserResponseEnum;
 import com.veryitman.springboot.service.MSUserService;
 import com.veryitman.springboot.util.MSUserUtil;
 import io.swagger.annotations.Api;
@@ -37,7 +37,7 @@ public class MSSignupController {
         MSResponse response = new MSResponse();
         MSUser user = null;
         if (null == userName || null == userPwd || userName.length() <= 0 || userPwd.length() <= 0) {
-            MSResponseEnum signupError = MSResponseEnum.SignupInvalidInfo;
+            MSUserResponseEnum signupError = MSUserResponseEnum.SignupInvalidInfo;
             response.setMsg(signupError.getMsg());
             response.setCode(signupError.getCode());
         } else {
@@ -49,11 +49,11 @@ public class MSSignupController {
                 user = MSUserUtil.createUser(userName, userPwd);
                 // 插入一条用户数据到数据表中
                 userService.addUser(user);
-                response.setCode(MSResponseEnum.SUCCESS.getCode());
-                response.setMsg(MSResponseEnum.SUCCESS.getMsg());
+                response.setCode(MSUserResponseEnum.SUCCESS.getCode());
+                response.setMsg(MSUserResponseEnum.SUCCESS.getMsg());
             } else {// 用户数据库的‘user’表中有该用户信息
                 // 返回错误信息：该用户已经注册过了
-                MSResponseEnum signupError = MSResponseEnum.SignupHasExistUser;
+                MSUserResponseEnum signupError = MSUserResponseEnum.SignupHasExistUser;
                 response.setMsg(signupError.getMsg());
                 response.setCode(signupError.getCode());
             }
