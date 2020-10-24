@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // way 2
-    if(2 == whichWay) {
+    if (2 == whichWay) {
       final wordPair = WordPair.random();
     }
 
@@ -50,7 +50,7 @@ class RandomWords extends StatefulWidget {
 }
 
 class _RandomWordsState extends State<RandomWords> {
-  final _suggestions  = <WordPair>[];
+  final _suggestions = <WordPair>[];
   final _biggerFont = TextStyle(fontSize: 18.0);
 
   /*
@@ -77,11 +77,11 @@ class _RandomWordsState extends State<RandomWords> {
     return ListView.builder(
       padding: EdgeInsets.all(16.0),
       itemBuilder: (context, i) {
-        if(i.isOdd) {
+        if (i.isOdd) {
           return Divider();
         }
         final index = i ~/ 2;
-        if(i >= _suggestions.length) {
+        if (i >= _suggestions.length) {
           _suggestions.addAll(generateWordPairs().take(10));
         }
         return _buildRow(_suggestions[index]);
