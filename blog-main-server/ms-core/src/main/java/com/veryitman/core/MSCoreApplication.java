@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MsCoreApplication {
+public class MSCoreApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(MsCoreApplication.class, args);
+        SpringApplication.run(MSCoreApplication.class, args);
     }
 
 }

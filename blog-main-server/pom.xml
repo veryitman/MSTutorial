@@ -25,6 +25,7 @@
         <module>ms-user</module>
         <module>ms-admin</module>
         <module>ms-admin-client</module>
+        <module>ms-blog</module>
     </modules>
 
     <properties>

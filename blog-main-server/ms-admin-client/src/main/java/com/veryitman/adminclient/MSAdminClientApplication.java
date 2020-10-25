@@ -4,10 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MsAdminClientApplication {
+public class MSAdminClientApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(MsAdminClientApplication.class, args);
+        SpringApplication.run(MSAdminClientApplication.class, args);
     }
-
 }

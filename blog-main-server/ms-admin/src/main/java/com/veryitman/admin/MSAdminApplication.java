@@ -6,10 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @EnableAdminServer
 @SpringBootApplication
-public class MsAdminApplication {
+public class MSAdminApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(MsAdminApplication.class, args);
+        SpringApplication.run(MSAdminApplication.class, args);
     }
 
 }
