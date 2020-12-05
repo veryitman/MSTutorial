@@ -1,4 +1,4 @@
-package com.veryitman.user.controller.test;
+package com.veryitman.user;
 
 import org.springframework.web.bind.annotation.*;
 import springfox.documentation.annotations.ApiIgnore;

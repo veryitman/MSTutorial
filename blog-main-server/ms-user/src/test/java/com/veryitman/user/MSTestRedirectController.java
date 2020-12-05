@@ -1,4 +1,4 @@
-package com.veryitman.user.controller.test;
+package com.veryitman.user;
 
 import com.alibaba.fastjson.JSON;
 import org.springframework.stereotype.Controller;
