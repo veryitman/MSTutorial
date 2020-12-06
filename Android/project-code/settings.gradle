@@ -1,1 +1,3 @@
+include ':MZSDK'
+rootProject.name='MSBlog'
 include ':app'

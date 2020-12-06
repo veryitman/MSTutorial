@@ -1,0 +1,20 @@
+
+[[_definitions]]
+== Definitions
+
+[[_msresponse]]
+=== MSResponse
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**code** +
+__optional__|integer (int32)
+|**msg** +
+__optional__|string
+|**results** +
+__optional__|object
+|===
+
+
+

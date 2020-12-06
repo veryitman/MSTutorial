@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#558895">
+
+    <ImageView
+        android:id="@+id/img_app_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/text_signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="20dp"
+        android:text="Signin"
+        android:textAlignment="center"
+        android:textColor="#E9F6E7C2"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/img_app_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/text_user_name_sigin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:paddingLeft="5dp"
+        android:textSize="22sp"
+        android:hint="user name"
+        android:singleLine="true"
+        app:layout_constraintTop_toBottomOf="@id/text_signin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/text_user_pwd_signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="textStart"
+        android:paddingLeft="5dp"
+        android:textSize="22sp"
+        android:textColor="#000000"
+        android:hint="user password"
+        android:singleLine="true"
+        app:layout_constraintTop_toBottomOf="@id/text_user_name_sigin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_signin"
+        android:onClick="onSigninClick"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="35dp"
+        android:textAlignment="center"
+        android:textColor="#ADFF0000"
+        android:textSize="22sp"
+        android:text="Signin"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/text_user_pwd_signin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

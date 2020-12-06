@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html xmlns="">
+<!--head-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>注册</title>
+    <!-- 加入jquery、jquery.json库 -->
+    <script type="text/javascript" src="../../../ms-lib/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../../../ms-lib/jquery.json.js"></script>
+    <script type="text/javascript" src="ms_user.js"></script>
+    <meta
+            name="viewport"
+            content="width=device-width,initial-scale=1,user-scalable=0"/>
+    <link
+            media="all"
+            type="text/css"
+            rel="stylesheet"
+            href="../../../ms-style/css_file/main.css"/>
+
+    <style type="text/css">
+        body {
+            background: #355565;
+        }
+    </style>
+</head>
+<!--head end-->
+<!--body begin-->
+<body>
+<div class="xh-regbox">
+    <div class="xh-title" id="form-title">注册</div>
+    <form class="xh-form">
+        <div class="register fields-error"></div>
+        <div class="xh-form-group">
+            <label class="required">用户名</label>
+            <input
+                    type="text"
+                    id="text_input_username_register"
+                    name="register_user_name"
+                    value=""
+                    placeholder=""
+                    class="form-control "
+                    style=""/>
+        </div>
+
+        <div class="xh-form-group">
+            <label class="required">密码</label>
+            <input
+                    type="password"
+                    id="text_input_register_password"
+                    name="register_password"
+                    value=""
+                    placeholder=""
+                    class="form-control "
+                    style=""/>
+        </div>
+
+        <div class="xh-form-group">
+            <label class="required">确认密码</label>
+            <input
+                    type="password"
+                    id="text_input_again_register_repassword"
+                    name="register_repassword"
+                    value=""
+                    placeholder=""
+                    class="form-control "
+                    style=""/>
+        </div>
+
+        <div class="xh-form-group mt10">
+            <button
+                    type="button"
+                    id="btn-register"
+                    onclick="ms_register();"
+                    class="xh-btn xh-btn-primary xh-btn-block xh-btn-lg">注册
+            </button>
+        </div>
+
+        <div class="xh-form-group mt10">
+            <button
+                    type="button"
+                    id="btn-go-login"
+                    onclick="ms_go_login();"
+                    class="xh-btn xh-btn-primary xh-btn-block xh-btn-lg">已有账号，去登录
+            </button>
+        </div>
+        <div class="xh-form-group xh-mT20"></div>
+        <script>
+            function ms_register() {
+                // 获取注册的用户名
+                var r_user_name = $('#text_input_username_register').val();
+                if (r_user_name.length <= 0) {
+                    console.log("The register's name is empty");
+                    return;
+                }
+                // 获取注册的密码
+                var r_user_pwd = $('#text_input_register_password').val();
+                //alert(document.getElementById('text_input_register_password'));
+                // 确认密码
+                var r_user_pwd_again = $('#text_input_again_register_repassword').val();
+                if (r_user_pwd.length <= 0 || r_user_pwd_again.length <= 0) {
+                    console.log("The register's pwd is empty");
+                    return;
+                }
+                // 两次密码不一致
+                if (r_user_pwd != r_user_pwd_again) {
+                    console.log("The register's pwd is different.");
+                    return;
+                }
+                signup_req_name(r_user_name, r_user_pwd, r_user_pwd_again, function (code) {
+                    if (0 != code) {
+                        console.log("fail and code:", code);
+                    } else {
+                        console.log("success.");
+                        // 去注册页面
+                        javascript:location.href = 'ms_login.html';
+                    }
+                });
+            }
+
+            function ms_go_login() {
+                // 打开登录页面
+                javascript:location.href = 'ms_login.html';
+            }
+        </script>
+    </form>
+</div>
+</body>
+<!--body end-->
+</html>
