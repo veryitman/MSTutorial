@@ -5,7 +5,7 @@ import com.veryitman.user.model.MSUser;
 import java.util.List;
 import java.util.Map;
 
-public interface MSUserService {
+public interface MSUserDBService {
 
     void createUserTable();
 

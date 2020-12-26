@@ -1,7 +1,7 @@
 package com.veryitman.user;
 
 import com.veryitman.user.model.MSUser;
-import com.veryitman.user.service.MSUserService;
+import com.veryitman.user.service.MSUserDBService;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -25,7 +25,7 @@ import java.util.Map;
 @SpringBootTest
 public class MSDBTests {
     @Autowired
-    MSUserService msUserService;
+    MSUserDBService msUserDBService;
 
     private Logger logger = LoggerFactory.getLogger(MSDBTests.class);
 
@@ -37,7 +37,7 @@ public class MSDBTests {
     @Test
     public void deleteUserById() {
         try {
-            msUserService.deleteByUid(1);
+            msUserDBService.deleteByUid(1);
         } catch (Exception e) {
             logger.error("MSBlog Test, Delete data happends errors:" + e.toString());
         }
@@ -45,13 +45,13 @@ public class MSDBTests {
 
     @Test
     public void dropTable() {
-        msUserService.deleteUserTable();
+        msUserDBService.deleteUserTable();
     }
 
     @Test
     public void createUserSQLTest() {
         // 增加user数据
-        msUserService.createUserTable();
+        msUserDBService.createUserTable();
     }
 
     @Test
@@ -65,17 +65,17 @@ public class MSDBTests {
         user.setAge(25);
         user.setGender(MSUser.GENDER_MALE);
         user.setPhone("17122036530");
-        msUserService.addUser(user);
+        msUserDBService.addUser(user);
     }
 
     @Test
     public void queryUserBySQLTest() {
         // 根据user_id查询
-        List<Map> userJson = msUserService.queryUserByUid(1);
+        List<Map> userJson = msUserDBService.queryUserByUid(1);
         logger.info("MSBlog Test, userJson by query user's id: " + userJson.get(0));
 
         // 根据user_name查询
-        userJson = msUserService.queryUserByUserName("mzc");
+        userJson = msUserDBService.queryUserByUserName("mzc");
         logger.info("MSBlog Test, userJson by query user's name: " + userJson.get(0));
     }
 

@@ -12,7 +12,7 @@ import java.util.Map;
 
 @Slf4j
 @Service
-public class MSUserServiceImpl implements MSUserService {
+public class MSUserDBServiceImpl implements MSUserDBService {
 
     private static final String USER_TABLE_NAME = "user";
 
