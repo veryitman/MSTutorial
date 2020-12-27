@@ -83,4 +83,9 @@ public class MSUserSigninServiceImpl implements MSUserSigninService {
 
         return response;
     }
+
+    @Override
+    public MSResponse signinUsingToken(String userName, String token) {
+        return null;
+    }
 }

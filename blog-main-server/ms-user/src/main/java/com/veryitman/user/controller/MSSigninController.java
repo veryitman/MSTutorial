@@ -59,6 +59,17 @@ public class MSSigninController {
         return response;
     }
 
+    @RequestMapping(value = "/token", method = RequestMethod.GET)
+    @ApiOperation(value = "Token 登录", httpMethod = "GET", notes = "Token登录")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "token", value = "token", required = true)
+    })
+    public MSResponse siginWithToken(@RequestParam(value = "token") String token) {
+        MSResponse response = userSigninService.signinUsingToken("", token);
+
+        return response;
+    }
+
 //    @GetMapping(value = "/redisconn")
 //    public String redis() {
 //        log.info(redisTemplate.getValueSerializer().toString() + ", " + redisTemplate.getHashValueSerializer().toString());

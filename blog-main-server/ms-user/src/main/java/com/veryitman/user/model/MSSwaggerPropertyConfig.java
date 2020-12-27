@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 @Getter
 @Component
 @ConfigurationProperties(prefix = "msconfig.swagger")
-public class MSSwaggerPropertyConfigModel {
+public class MSSwaggerPropertyConfig {
 
     private boolean enableSwagger;
 

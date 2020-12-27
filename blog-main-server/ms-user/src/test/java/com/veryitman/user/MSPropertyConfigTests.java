@@ -1,7 +1,7 @@
 package com.veryitman.user;
 
-import com.veryitman.user.model.MSSecurityPropertyConfigModel;
-import com.veryitman.user.model.MSSwaggerPropertyConfigModel;
+import com.veryitman.user.model.MSSecurityPropertyConfig;
+import com.veryitman.user.model.MSSwaggerPropertyConfig;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
@@ -19,10 +19,10 @@ import java.util.Map;
 public class MSPropertyConfigTests {
 
     @Autowired
-    MSSwaggerPropertyConfigModel swaggerPropertyConfigModel;
+    MSSwaggerPropertyConfig swaggerPropertyConfigModel;
 
     @Autowired
-    MSSecurityPropertyConfigModel securityPropertyConfigModel;
+    MSSecurityPropertyConfig securityPropertyConfigModel;
 
     private Logger logger = LoggerFactory.getLogger(MSPropertyConfigTests.class);
 

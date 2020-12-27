@@ -13,7 +13,7 @@ import java.util.Map;
 @Setter
 @Getter
 @ConfigurationProperties(prefix = "msconfig.security")
-public class MSSecurityPropertyConfigModel {
+public class MSSecurityPropertyConfig {
     private boolean enableCSRF;
 
     private String defToken;

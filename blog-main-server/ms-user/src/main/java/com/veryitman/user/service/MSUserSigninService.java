@@ -18,4 +18,6 @@ public interface MSUserSigninService {
      * @return @see MSResponse
      */
     MSResponse signinUsingUserName(String userName, String pwd);
+
+    MSResponse signinUsingToken(String userName, String token);
 }
