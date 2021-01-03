@@ -22,7 +22,17 @@ public enum MSUserResponseEnum {
      */
     SignupInvalidInfo(110005, "User\'s name or password is invalid."),
 
-    SignupHasExistUser(110006, "User has existed and go to siguin.");
+    SignupHasExistUser(110006, "User has existed and go to siguin."),
+
+    /**
+     * Token.
+     */
+    FetchTokenError(120001, "Not valid Token."),
+
+    /**
+     * API.
+     */
+    APIMissParamError(150001, "Miss necessary parameter.");
 
     private int code;
     private String msg;

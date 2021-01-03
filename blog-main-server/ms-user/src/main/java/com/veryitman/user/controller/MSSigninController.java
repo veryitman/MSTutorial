@@ -59,26 +59,37 @@ public class MSSigninController {
         return response;
     }
 
-    @RequestMapping(value = "/token", method = RequestMethod.GET)
-    @ApiOperation(value = "Token 登录", httpMethod = "GET", notes = "Token登录")
+    @RequestMapping(value = "/get/token", method = RequestMethod.GET)
+    @ApiOperation(value = "获取token", httpMethod = "GET", notes = "获取登录")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "token", value = "token", required = true)
+            @ApiImplicitParam(name = "userID", value = "userID", required = true)
     })
-    public MSResponse siginWithToken(@RequestParam(value = "token") String token) {
-        MSResponse response = userSigninService.signinUsingToken("", token);
+    public MSResponse getToken(@RequestParam(value = "userid") String userID) {
+        MSResponse response = userSigninService.fetchUserToken(userID);
 
         return response;
     }
 
-//    @GetMapping(value = "/redisconn")
-//    public String redis() {
-//        log.info(redisTemplate.getValueSerializer().toString() + ", " + redisTemplate.getHashValueSerializer().toString());
-//        RedisConnectionFactory connectionFactory = redisTemplate.getConnectionFactory();
-//        log.info(connectionFactory.toString());
-//        if (connectionFactory instanceof LettuceConnectionFactory) {
-//            LettuceConnectionFactory lettuceConnectionFactory = (LettuceConnectionFactory) connectionFactory;
-//            log.info(lettuceConnectionFactory.getHostName() + ", " + lettuceConnectionFactory.getPort());
-//        }
-//        return connectionFactory.toString();
-//    }
+    @RequestMapping(value = "/token", method = RequestMethod.GET)
+    @ApiOperation(value = "Token登录", httpMethod = "GET", notes = "Token登录")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "userID", value = "userID", required = true),
+            @ApiImplicitParam(name = "token", value = "token", required = true)
+    })
+    public MSResponse siginWithToken(@RequestParam(value = "userid") String userID, @RequestParam(value = "token") String token) {
+        MSResponse response = userSigninService.signinUsingToken(userID, token);
+
+        return response;
+    }
+
+    @RequestMapping(value = "/refresh/token", method = RequestMethod.GET)
+    @ApiOperation(value = "刷新Token", httpMethod = "GET", notes = "Token刷新")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "token", value = "token", required = true)
+    })
+    public MSResponse refreshToken(@RequestParam(value = "token") String token) {
+        MSResponse response = userSigninService.refreshUserToken(token);
+
+        return response;
+    }
 }

@@ -19,5 +19,25 @@ public interface MSUserSigninService {
      */
     MSResponse signinUsingUserName(String userName, String pwd);
 
-    MSResponse signinUsingToken(String userName, String token);
+    /**
+     * 使用token登录
+     * @param userID 用户id
+     * @param token token
+     * @return @see MSResponse
+     */
+    MSResponse signinUsingToken(String userID, String token);
+
+    /***
+     * 获取 token
+     * @param userID 当前登录的userID
+     * @return @see MSResponse
+     */
+    MSResponse fetchUserToken(String userID);
+
+    /***
+     * 刷新 token
+     * @param token 当前登录用户的token
+     * @return @see MSResponse
+     */
+    MSResponse refreshUserToken(String token);
 }

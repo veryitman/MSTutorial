@@ -1,3 +1,6 @@
+/**
+ * 解决跨域问题。
+ */
 package com.veryitman.user.config;
 
 import org.springframework.web.servlet.config.annotation.CorsRegistry;

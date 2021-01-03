@@ -1,3 +1,9 @@
+/**
+ * @Description：拦截器配置管理
+ * @author：Mark
+ * @CreateDate：2020.12.29
+ * @update：[1][2020.12.29][Mark][New]
+ */
 package com.veryitman.user.config;
 
 import com.veryitman.user.interceptor.MSAuthInterceptor;
@@ -22,7 +28,8 @@ public class MSAuthConfigurer implements WebMvcConfigurer {
         // 如下路径不做拦截
         List<String> excludePaths = new ArrayList<>();
         excludePaths.add("/signup/**"); //注册
-        excludePaths.add("/signin/name/**"); //登录
+        excludePaths.add("/signin/name/**"); //用户名登录
+        excludePaths.add("/signin/get/token/**"); //获取token
         excludePaths.add("/signout/**"); //登出
         excludePaths.add("/static/**");  //静态资源
         excludePaths.add("/assets/**");  //静态资源
@@ -36,7 +43,7 @@ public class MSAuthConfigurer implements WebMvcConfigurer {
     }
 
     /**
-     * 如果不在 MSAuthInterceptor 类上面加入component，这里可以使用bean注解
+     * 如果不在 MSAuthInterceptor 类上面加入Component注解，这里可以使用bean注解
     @Bean
     public MSAuthInterceptor authenticationInterceptor() {
         return new MSAuthInterceptor();
