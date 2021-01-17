@@ -8,7 +8,8 @@
 
 package com.veryitman.user.interceptor;
 
-import com.veryitman.user.util.MSAuthTokenUtil;
+import com.veryitman.user.util.MSAuthTokenHelper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 
@@ -22,6 +23,13 @@ import java.util.Map;
 @Component
 public class MSAuthInterceptor implements HandlerInterceptor {
     private static final String REQUEST_TOKEN_KEY = "token";
+
+    private MSAuthTokenHelper tokenHelper;
+
+    @Autowired
+    public void setTokenHelper(MSAuthTokenHelper tokenHelper) {
+        this.tokenHelper = tokenHelper;
+    }
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
@@ -41,7 +49,7 @@ public class MSAuthInterceptor implements HandlerInterceptor {
             }
         }
 
-        if (MSAuthTokenUtil.verifyToken(token)) {
+        if (tokenHelper.verifyToken(token)) {
             return true;
         }
 

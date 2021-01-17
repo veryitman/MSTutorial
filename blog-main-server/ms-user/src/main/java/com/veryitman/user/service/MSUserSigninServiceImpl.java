@@ -5,13 +5,12 @@ import com.veryitman.core.model.MSResponse;
 import com.veryitman.user.model.MSAuthToken;
 import com.veryitman.user.model.MSUser;
 import com.veryitman.user.model.MSUserResponseEnum;
-import com.veryitman.user.util.MSAuthTokenUtil;
+import com.veryitman.user.util.MSAuthTokenHelper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -20,6 +19,8 @@ import java.util.Map;
 public class MSUserSigninServiceImpl implements MSUserSigninService {
 
     private MSUserDBService userDBService;
+
+    private MSAuthTokenHelper tokenHelper;
 
     private RedisTemplate<String, Object> redisTemplate;
 
@@ -31,6 +32,11 @@ public class MSUserSigninServiceImpl implements MSUserSigninService {
     @Autowired
     public void setRedisTemplate(RedisTemplate redisTemplate) {
         this.redisTemplate = redisTemplate;
+    }
+
+    @Autowired
+    public void setTokenHelper(MSAuthTokenHelper tokenHelper) {
+        this.tokenHelper = tokenHelper;
     }
 
     @Override
@@ -61,7 +67,7 @@ public class MSUserSigninServiceImpl implements MSUserSigninService {
                     user = JSON.parseObject(JSON.toJSONString(user_map), MSUser.class);
                     // 生成token并存到Redis中
                     String userID = user.getUserID().toString();
-                    String userToken = MSAuthTokenUtil.generateToken(userID);
+                    String userToken = tokenHelper.generateToken(userID);
                     if (null != userToken || userToken.length() > 0) {
                         // 使用user_id作为key存储token
                         redisTemplate.opsForValue().set(userID, userToken);
@@ -84,10 +90,12 @@ public class MSUserSigninServiceImpl implements MSUserSigninService {
         MSResponse response = new MSResponse();
         MSAuthToken authToken = new MSAuthToken();
 
-        // 数据库中没有找到该用户不允许获取token
+        // TODO：判断该id是否符合user服务的userid生成规则
+
+        // 数据库中没有找到该用户不允许获取token，即该用户不合法
         if (null != userID && userID.length() > 0) {
             List<Map> query_users = userDBService.queryUserByUid(Integer.parseInt(userID));
-            if (null == query_users && query_users.size() <= 0) {
+            if (null == query_users || query_users.size() <= 0) {
                 MSUserResponseEnum rspEnum = MSUserResponseEnum.FetchTokenError;
                 response.setCode(rspEnum.getCode());
                 response.setMsg(rspEnum.getMsg());
@@ -108,7 +116,7 @@ public class MSUserSigninServiceImpl implements MSUserSigninService {
             response.setMsg(rspEnum.getMsg());
             authToken.setAuthToken(tokenAtRedis);
         } else {
-            String token = MSAuthTokenUtil.generateToken(userID);
+            String token = tokenHelper.generateToken(userID);
             if (null != token) {
                 MSUserResponseEnum rspEnum = MSUserResponseEnum.SUCCESS;
                 response.setCode(rspEnum.getCode());
@@ -164,10 +172,10 @@ public class MSUserSigninServiceImpl implements MSUserSigninService {
             return response;
         }
 
-        String refreshToken = MSAuthTokenUtil.refreshToken(token);
+        String refreshToken = tokenHelper.refreshToken(token);
 
         if (null != refreshToken) {
-            String userID = MSAuthTokenUtil.userIDfromToken(token);
+            String userID = tokenHelper.userIDfromToken(token);
             // 使用user_id作为key存储token到Redis中
             redisTemplate.opsForValue().set(userID, refreshToken);
         }
