@@ -42,7 +42,7 @@
         android:id="@+id/mvvm_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="MVP"
+        android:text="MVVM"
         android:layout_marginTop="50dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

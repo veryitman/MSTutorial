@@ -11,9 +11,10 @@ import com.veryitman.design.R;
 import com.veryitman.design.model.User;
 
 // https://blog.csdn.net/jerechen/article/details/100058519
+
 public class MVCActivity extends AppCompatActivity {
     private EditText userNameEd;
-    private EditText userPedEd;
+    private EditText userPwdEd;
 
     private User user;
 
@@ -23,18 +24,20 @@ public class MVCActivity extends AppCompatActivity {
         setContentView(R.layout.mvc_login);
 
         userNameEd = findViewById(R.id.et_name);
-        userPedEd = findViewById(R.id.et_pwd);
+        userPwdEd = findViewById(R.id.et_pwd);
     }
 
     public void onLoginClick(View view) {
         String name = userNameEd.getText().toString().trim();
-        String pwd = userPedEd.getText().toString().trim();
+        String pwd = userPwdEd.getText().toString().trim();
         if (name.equals("admin") && pwd.equals("adminpwd")) {
             user = new User();
             user.setUserName(name);
             user.setUserPwd(pwd);
 
-            Toast.makeText(this, name + " Login Successful", Toast.LENGTH_SHORT).show();
+            String tipContent = user.getUserName() + " Login Successful" + " use " + user.getUserPwd();
+            Toast.makeText(this, tipContent, Toast.LENGTH_SHORT).show();
+            finish();
         } else {
             Toast.makeText(this, "Login Failed", Toast.LENGTH_SHORT).show();
         }
