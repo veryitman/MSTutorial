@@ -15,7 +15,7 @@ abstract class PrintHelper {
 class Item extends Meta {
   Item(name, price) : super(name, price);
 
-  Item operator +(Item item) => Item(name + item.name, price + item.price);
+  Item operator +(Item item) => Item(name + " " + item.name, price + item.price);
 }
 
 /// 购物车
@@ -35,9 +35,18 @@ class ShoppingCart extends Meta with PrintHelper {
   */
 
   double get price {
+    String n = bookings.reduce((value, element) {
+      return value + element;
+    }).name;
+    print(n); /// Apple Pear Banana
+
+    return bookings.reduce((value, element) => value+element).price;
+
+    /*
     return bookings.reduce((value, element) {
       return value + element;
     }).price;
+    */
   }
 
   ShoppingCart.withCode({name, this.code})

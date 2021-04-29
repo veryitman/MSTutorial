@@ -1,8 +1,47 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_app_learn/NewRoute.dart';
 
 void main() {
-  runApp(MyApp());
+  FlutterError.onError = (FlutterErrorDetails details) {
+    print("Catch errors: " + details.stack.toString());
+    reportErrorAndLog(details);
+  };
+
+  // runZoned(() => runApp(MyApp()), zoneSpecification: ZoneSpecification(
+  //   print: (Zone self, ZoneDelegate parasent, Zone zone, String line) {
+  //     collectLog(line);
+  //   },
+  // ), onError: (Object object, StackTrace stackTrace) {
+  //   FlutterErrorDetails errorDetails = makeDetails(object, stackTrace);
+  //   reportErrorAndLog(errorDetails);
+  // });
+
+  runZonedGuarded(() => runApp(MyApp()), (Object error, StackTrace stack) {
+    //Crashlytics.instance.recordError(error, stack);
+    FlutterErrorDetails errorDetails = makeDetails(error, stack);
+    reportErrorAndLog(errorDetails);
+  }, zoneSpecification: ZoneSpecification(
+      print: (Zone self, ZoneDelegate parasent, Zone zone, String line) {
+    collectLog(line);
+  }));
+
+  //runApp(MyApp());
+}
+
+///收集日志
+void collectLog(String line) {}
+
+///上报错误和日志逻辑
+void reportErrorAndLog(FlutterErrorDetails details) {}
+
+/// 构建错误信息
+FlutterErrorDetails makeDetails(Object obj, StackTrace stack) {
+  FlutterErrorDetails details;
+  details = FlutterErrorDetails(exception: obj, stack: stack);
+
+  return details;
 }
 
 class MyApp extends StatelessWidget {
