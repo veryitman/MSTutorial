@@ -6,7 +6,7 @@ class TipRoute extends StatelessWidget {
 
   TipRoute({
     Key key,
-    @required this.text,
+     this.text,
   }) : super(key: key);
 
   @override
