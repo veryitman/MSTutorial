@@ -1,3 +1,6 @@
+/**
+ * 在SpringBoot 1.x 版本中比较常用该方法（CorsFilter）来解决跨域请求。
+ */
 package com.veryitman.user.config;
 
 import org.springframework.context.annotation.Bean;

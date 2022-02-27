@@ -1,3 +1,7 @@
+/**
+ * 可以参考源码 RedisAutoConfiguration 的自动配置。
+ */
+
 package com.veryitman.user.config;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
@@ -57,14 +61,14 @@ public class MSRedisConfig {
     }
 
     /**
-     * key 序列化
+     * key 序列化。
      */
     private RedisSerializer<String> keySerializer() {
         return new StringRedisSerializer();
     }
 
     /**
-     * value 序列化
+     * value 序列化。
      */
     private RedisSerializer<Object> valueSerializer() {
         Jackson2JsonRedisSerializer<Object> jackson2JsonRedisSerializer;

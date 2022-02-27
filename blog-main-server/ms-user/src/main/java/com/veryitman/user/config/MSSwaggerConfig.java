@@ -38,8 +38,8 @@ public class MSSwaggerConfig {
         String apiVersion = "1.0.0";
         // 联系方式
         String homePage = "http://veryitman.com";
-        String emailUrl = "veryitman@126.com";
-        Contact contact = new Contact("itman", homePage, emailUrl);
+        String email = "veryitman@126.com";
+        Contact contact = new Contact("itman", homePage, email);
         return apiInfoBuilder.title(apiTitle).description(apiDes)
                 .version(apiVersion)
                 .contact(contact)

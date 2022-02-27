@@ -1,3 +1,6 @@
+/**
+ * 自定义 Filter 解决跨域问题。
+ */
 package com.veryitman.user.filter;
 
 import org.springframework.stereotype.Component;
